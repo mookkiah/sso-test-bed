@@ -1,0 +1,55 @@
+# kubectl create deployment ssp-sp --image=unicon/simplesamlphp --dry-run=client -oyaml --port 80  > ssp-sp-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ssp-sp
+  name: ssp-sp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ssp-sp
+  template:
+    metadata:
+      labels:
+        app: ssp-sp
+    spec:
+      containers:
+      - image: unicon/simplesamlphp
+        name: simplesamlphp
+        ports:
+        - containerPort: 80
+        - containerPort: 443
+        volumeMounts:
+          - name: vol-config-php
+            mountPath: /var/simplesamlphp/config/config.php
+            subPath: config.php
+            readOnly: true
+        #   - name: vol-authsources-php
+        #     mountPath: /var/simplesamlphp/config/authsources.php
+        #     subPath: authsources.php
+        #     readOnly: true
+          - name: vol-x509keycert
+            mountPath: /var/simplesamlphp/cert
+            readOnly: true
+          - name: vol-httpdconf
+            mountPath: /etc/httpd/conf/httpd.conf
+            subPath: httpd.conf
+            readOnly: true
+      volumes:
+        - name: vol-config-php
+          configMap:
+            name: config.php
+        - name: vol-authsources-php
+          configMap:
+            name: authsources.php
+        - name: vol-x509keycert
+          configMap:
+            name: x509keycert
+        - name: vol-httpdconf
+          configMap:
+            name: httpdconf
+
+
+
