@@ -17,6 +17,7 @@ spec:
     spec:
       containers:
       - image: unicon/simplesamlphp
+        imagePullPolicy: IfNotPresent
         name: simplesamlphp
         ports:
         - containerPort: 80
@@ -34,12 +35,20 @@ spec:
             mountPath: /var/simplesamlphp/metadata/saml20-idp-hosted.php
             subPath: saml20-idp-hosted.php
             readOnly: true
+          - name: vol-exampleauth-enable
+            mountPath: /var/simplesamlphp/modules/exampleauth/enable
+            subPath: enable
+            readOnly: true
           - name: vol-x509keycert
             mountPath: /var/simplesamlphp/cert
             readOnly: true
           - name: vol-httpdconf
             mountPath: /etc/httpd/conf/httpd.conf
             subPath: httpd.conf
+            readOnly: true
+          - name: vol-saml20-sp-remote-php
+            mountPath: /var/simplesamlphp/metadata/saml20-sp-remote.php
+            subPath: saml20-sp-remote.php
             readOnly: true
       volumes:
         - name: vol-config-php
@@ -51,12 +60,18 @@ spec:
         - name: vol-saml20-idp-hosted-php
           configMap:
             name: saml20-idp-hosted.php
+        - name: vol-exampleauth-enable
+          configMap:
+            name: exampleauth-enable
         - name: vol-x509keycert
           configMap:
             name: x509keycert
         - name: vol-httpdconf
           configMap:
             name: httpdconf
+        - name: vol-saml20-sp-remote-php
+          configMap:
+            name: saml20-sp-remote-php
 
 
 

@@ -14,8 +14,8 @@ kubectl -n ssp-sp  create configmap config.php --from-file=config/config.php
 # kubectl -n ssp-sp  delete configmap authsources.php --ignore-not-found
 # kubectl -n ssp-sp  create configmap authsources.php --from-file=config/authsources.php
 
-# kubectl -n ssp-sp  delete configmap saml20-idp-hosted.php --ignore-not-found
-# kubectl -n ssp-sp  create configmap saml20-idp-hosted.php --from-file=metadata/saml20-idp-hosted.php
+kubectl -n ssp-sp  delete configmap saml20-idp-remote.php --ignore-not-found
+kubectl -n ssp-sp  create configmap saml20-idp-remote.php --from-file=metadata/saml20-idp-remote.php
 
 kubectl -n ssp-sp  delete configmap httpdconf --ignore-not-found
 kubectl -n ssp-sp  create configmap httpdconf --from-file=httpd-conf/httpd.conf

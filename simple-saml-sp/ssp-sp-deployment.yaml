@@ -37,6 +37,10 @@ spec:
             mountPath: /etc/httpd/conf/httpd.conf
             subPath: httpd.conf
             readOnly: true
+          - name: vol-saml20-idp-remote-php
+            mountPath: /var/simplesamlphp/metadata/saml20-idp-remote.php
+            subPath: saml20-idp-remote.php
+            readOnly: true
       volumes:
         - name: vol-config-php
           configMap:
@@ -50,6 +54,9 @@ spec:
         - name: vol-httpdconf
           configMap:
             name: httpdconf
+        - name: vol-saml20-idp-remote-php
+          configMap:
+            name: saml20-idp-remote.php
 
 
 
