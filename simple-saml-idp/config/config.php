@@ -74,7 +74,7 @@ $config = [
      * also as the technical contact in generated metadata.
      */
     'technicalcontact_name' => 'Administrator',
-    'technicalcontact_email' => 'na@example.org',
+    'technicalcontact_email' => 'admin@mm-local.com',
 
     /*
      * (Optional) The method by which email is delivered.  Defaults to mail which utilizes the
