@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Base file taken from docker.io/unicon/simplesamlphp@sha256:ad6ddcd253294ce7e80ed4db06c1f39b964bc18b39f7bcb209015a0234bc418d
+ */
 $config = [
     /*
      * When multiple authentication sources are defined, you can specify one to use by default
@@ -82,7 +85,7 @@ $config = [
     ],
     */
 
-    /*
+    
     'example-userpass' => [
         'exampleauth:UserPass',
 
@@ -100,7 +103,7 @@ $config = [
             'eduPersonAffiliation' => ['member', 'employee'],
         ],
     ],
-    */
+    
 
     /*
     'crypto-hash' => [
