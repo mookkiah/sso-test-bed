@@ -1,0 +1,23 @@
+# kubectl create deployment ssp-idp --image=unicon/simplesamlphp --dry-run=client -oyaml --port 80  > ssp-idp-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ssp-idp
+  name: ssp-idp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ssp-idp
+  template:
+    metadata:
+      labels:
+        app: ssp-idp
+    spec:
+      containers:
+      - image: unicon/simplesamlphp
+        name: simplesamlphp
+        ports:
+        - containerPort: 80
+        - containerPort: 443
