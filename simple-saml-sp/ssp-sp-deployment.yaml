@@ -26,13 +26,6 @@ spec:
             mountPath: /var/simplesamlphp/config/config.php
             subPath: config.php
             readOnly: true
-        #   - name: vol-authsources-php
-        #     mountPath: /var/simplesamlphp/config/authsources.php
-        #     subPath: authsources.php
-        #     readOnly: true
-          - name: vol-x509keycert
-            mountPath: /var/simplesamlphp/cert
-            readOnly: true
           - name: vol-httpdconf
             mountPath: /etc/httpd/conf/httpd.conf
             subPath: httpd.conf
@@ -48,9 +41,6 @@ spec:
         - name: vol-authsources-php
           configMap:
             name: authsources.php
-        - name: vol-x509keycert
-          configMap:
-            name: x509keycert
         - name: vol-httpdconf
           configMap:
             name: httpdconf

@@ -1,0 +1,14 @@
+<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                    ID="_a89266e7db2b7b6191b09be8a7dec02587fee92b12"
+                    Version="2.0"
+                    IssueInstant="2022-05-21T11:45:24Z"
+                    Destination="https://ssp-idp.mm-local.com/simplesaml/saml2/idp/SSOService.php"
+                    AssertionConsumerServiceURL="https://ssp-sp.mm-local.com/simplesaml/module.php/saml/sp/saml2-acs.php/default-sp"
+                    ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                    >
+    <saml:Issuer>https://ssp-sp.mm-local.com/simplesaml/module.php/saml/sp/metadata.php/default-sp</saml:Issuer>
+    <samlp:NameIDPolicy Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
+                        AllowCreate="true"
+                        />
+</samlp:AuthnRequest>

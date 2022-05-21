@@ -64,8 +64,8 @@ spec:
           configMap:
             name: exampleauth-enable
         - name: vol-x509keycert
-          configMap:
-            name: x509keycert
+          secret:
+            secretName: x509keycert
         - name: vol-httpdconf
           configMap:
             name: httpdconf

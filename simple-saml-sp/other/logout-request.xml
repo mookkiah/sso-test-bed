@@ -1,0 +1,13 @@
+<samlp:LogoutRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                     ID="_90af3c44ebd44dd8b54786d51c9b98e9226decacae"
+                     Version="2.0"
+                     IssueInstant="2022-05-21T11:45:34Z"
+                     Destination="https://ssp-idp.mm-local.com/simplesaml/saml2/idp/SingleLogoutService.php"
+                     >
+    <saml:Issuer>https://ssp-sp.mm-local.com/simplesaml/module.php/saml/sp/metadata.php/default-sp</saml:Issuer>
+    <saml:NameID SPNameQualifier="https://ssp-sp.mm-local.com/simplesaml/module.php/saml/sp/metadata.php/default-sp"
+                 Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
+                 >_48aa1222fa80cc84592e1fdfb4e58ed1a43e4b22c9</saml:NameID>
+    <samlp:SessionIndex>_119d2dc6878f2f187a84559893015d6f26c3896a32</samlp:SessionIndex>
+</samlp:LogoutRequest>

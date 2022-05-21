@@ -2,9 +2,12 @@
 kubectl create namespace ssp-idp
 kubectl config set-context --current --namespace ssp-idp
 # We need SSL certificate for IDP to encrypt/sign based on the need
-openssl req -newkey rsa:2048 -new -x509 -nodes -keyout cert/server.pem -out cert/server.crt -config ssp-idp-csr.conf
-kubectl -n ssp-idp delete configmap x509keycert --ignore-not-found
-kubectl -n ssp-idp create configmap x509keycert --from-file=cert/server.pem --from-file=cert/server.crt
+# mkdir -p cert
+# openssl req -newkey rsa:2048 -new -x509 -nodes -keyout cert/server.pem -out cert/server.crt -config ssp-idp-csr.conf
+# openssl x509 -in cert/server.crt -text -noout
+
+kubectl -n ssp-idp delete secret x509keycert --ignore-not-found
+kubectl -n ssp-idp create secret generic x509keycert --from-file=cert/server.pem --from-file=cert/server.crt
 
 kubectl -n ssp-idp delete configmap config.php --ignore-not-found
 kubectl -n ssp-idp create configmap config.php --from-file=config/config.php
@@ -26,8 +29,9 @@ kubectl -n ssp-idp delete configmap saml20-sp-remote-php --ignore-not-found
 kubectl -n ssp-idp create configmap saml20-sp-remote-php --from-file=metadata/saml20-sp-remote.php
 
 kubectl -n ssp-idp apply -f ssp-idp-deployment.yaml 
-kubectl -n ssp-idp exec -it $(kubectl -n ssp-idp get pod -l app=ssp-idp --output=name) -- ls -l /var/simplesamlphp/config
-kubectl -n ssp-idp exec -it $(kubectl -n ssp-idp get pod -l app=ssp-idp --output=name) -- head /var/simplesamlphp/config/config.php
+# Verify
+#kubectl -n ssp-idp exec -it $(kubectl -n ssp-idp get pod -l app=ssp-idp --output=name) -- ls -l /var/simplesamlphp/config
+#kubectl -n ssp-idp exec -it $(kubectl -n ssp-idp get pod -l app=ssp-idp --output=name) -- head /var/simplesamlphp/config/config.php
 kubectl -n ssp-idp apply -f ssp-idp-service.yaml
 kubectl -n ssp-idp apply -f ssp-idp-ingress.yaml    
 
