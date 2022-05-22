@@ -1,6 +1,14 @@
 # Changes
 
 
+## May 22, 2022
+### jenkins-ssp-idp
+- [Setup Jenkins in Kubernetes](https://mm-notes.com/devops/jenkins/2021/10/30/jenkins-in-kubernetes.html)
+- [Configure SAML based login for Jenkins](https://mm-notes.com/security/saml/2021/10/30/enabling-saml-sso-in-jenkins.html)
+- [Jenkins SAML plugin](https://plugins.jenkins.io/saml/)
+- JcasC used.
+
+
 ## May 21, 2022
 
 ### ssp-sp-gluu-idp
@@ -12,7 +20,7 @@
 - Added login and logout saml requests for reference.
 
 ## May 18, 2022
-ssp-sp-gluu-idp
+### ssp-sp-gluu-idp
 - Gluu Trust Relationship setup [documentation](https://gluu.org/docs/gluu-server/4.0/admin-guide/saml/#create-a-trust-relationship).
 - 
 

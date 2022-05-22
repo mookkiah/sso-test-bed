@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://ssp-idp.mm-local.com/simplesaml/saml2/idp/metadata.php">
+  <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIEDDCCAvQCCQCAj36VTq0mEjANBgkqhkiG9w0BAQ0FADCBxzELMAkGA1UEBhMCVVMxEDAOBgNVBAgMB0Zsb3JpZGExFTATBgNVBAcMDEphY2tzb252aWxsZTEOMAwGA1UEEQwFMzIyMTYxGzAZBgNVBAkMEjQyMjEgTWFyYmxld29vZCBsbjEQMA4GA1UECgwHTU0gTGFiczEWMBQGA1UECwwNSVQgRGVwYXJ0bWVudDEVMBMGA1UEAwwMbW0tbG9jYWwuY29tMSEwHwYJKoZIhvcNAQkBFhJhZG1pbkBtbS1sb2NhbC5jb20wHhcNMjIwNTE0MTgxMjE2WhcNMjIwNjEzMTgxMjE2WjCBxzELMAkGA1UEBhMCVVMxEDAOBgNVBAgMB0Zsb3JpZGExFTATBgNVBAcMDEphY2tzb252aWxsZTEOMAwGA1UEEQwFMzIyMTYxGzAZBgNVBAkMEjQyMjEgTWFyYmxld29vZCBsbjEQMA4GA1UECgwHTU0gTGFiczEWMBQGA1UECwwNSVQgRGVwYXJ0bWVudDEVMBMGA1UEAwwMbW0tbG9jYWwuY29tMSEwHwYJKoZIhvcNAQkBFhJhZG1pbkBtbS1sb2NhbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDJpjo4Wy/4+DxR8lAk/mNzFF1ljcX7WT9MiYmewFx5oqXynaznV3Lz3xk7qoNcGWPadlzTJaHqqJXDe/QgSAMz31QcdTB7k3jHx90hTBrYvreq0FOJKQGEKkLIh9ZPN4sNpkm6beFotUbLOaFWV7UaW5QmkMWla1qTNSHUMVqrdtfHp+ZU+7/UaKaHZfjBbbeUkcS1mvYvVY4PgvPdjD2F/sR6hPBo1D/SALIysuQP+JqhhP3QJjm/GbYTNvzQeRBXJiySOk+el0A5STGnkR3av42sNIxvIRlWw+1egtnbrYk1XEDR3zNqFVp1zEMnflmRg+uAkAAYtTbVNTmDTEA9AgMBAAEwDQYJKoZIhvcNAQENBQADggEBAAccm5aC6lGcW4iTpDqmvduTTvhTLjGqliD8zt7nLg9zq5iZaQNGucDF4oVNV/mR8LkTqfv8A4qXBzBIznU+B2QBBBuD5Ta9YIrw/VnIBjgPwHY86VLjRv+em+BC/Fib9hrbjwjE3wNRXt2dXjP1qrZBb97T6cXydAqO0o+zdsUTNmNrUmI3q2dyeVAAcigjThKKrovpJwFHeSREqmiqmyMYcYK/ywNiX99ZPWfdGu5EuhJvcP/q5XjmiED1u4R5ebdY+L1mRdLII9pyb85LUWRdnQaWZBfWK47AEahCK2Bqw+Nboj8NxGTuGHMxIiNhMSILspQLftUfDuz5zHtIDxw=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIEDDCCAvQCCQCAj36VTq0mEjANBgkqhkiG9w0BAQ0FADCBxzELMAkGA1UEBhMCVVMxEDAOBgNVBAgMB0Zsb3JpZGExFTATBgNVBAcMDEphY2tzb252aWxsZTEOMAwGA1UEEQwFMzIyMTYxGzAZBgNVBAkMEjQyMjEgTWFyYmxld29vZCBsbjEQMA4GA1UECgwHTU0gTGFiczEWMBQGA1UECwwNSVQgRGVwYXJ0bWVudDEVMBMGA1UEAwwMbW0tbG9jYWwuY29tMSEwHwYJKoZIhvcNAQkBFhJhZG1pbkBtbS1sb2NhbC5jb20wHhcNMjIwNTE0MTgxMjE2WhcNMjIwNjEzMTgxMjE2WjCBxzELMAkGA1UEBhMCVVMxEDAOBgNVBAgMB0Zsb3JpZGExFTATBgNVBAcMDEphY2tzb252aWxsZTEOMAwGA1UEEQwFMzIyMTYxGzAZBgNVBAkMEjQyMjEgTWFyYmxld29vZCBsbjEQMA4GA1UECgwHTU0gTGFiczEWMBQGA1UECwwNSVQgRGVwYXJ0bWVudDEVMBMGA1UEAwwMbW0tbG9jYWwuY29tMSEwHwYJKoZIhvcNAQkBFhJhZG1pbkBtbS1sb2NhbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDJpjo4Wy/4+DxR8lAk/mNzFF1ljcX7WT9MiYmewFx5oqXynaznV3Lz3xk7qoNcGWPadlzTJaHqqJXDe/QgSAMz31QcdTB7k3jHx90hTBrYvreq0FOJKQGEKkLIh9ZPN4sNpkm6beFotUbLOaFWV7UaW5QmkMWla1qTNSHUMVqrdtfHp+ZU+7/UaKaHZfjBbbeUkcS1mvYvVY4PgvPdjD2F/sR6hPBo1D/SALIysuQP+JqhhP3QJjm/GbYTNvzQeRBXJiySOk+el0A5STGnkR3av42sNIxvIRlWw+1egtnbrYk1XEDR3zNqFVp1zEMnflmRg+uAkAAYtTbVNTmDTEA9AgMBAAEwDQYJKoZIhvcNAQENBQADggEBAAccm5aC6lGcW4iTpDqmvduTTvhTLjGqliD8zt7nLg9zq5iZaQNGucDF4oVNV/mR8LkTqfv8A4qXBzBIznU+B2QBBBuD5Ta9YIrw/VnIBjgPwHY86VLjRv+em+BC/Fib9hrbjwjE3wNRXt2dXjP1qrZBb97T6cXydAqO0o+zdsUTNmNrUmI3q2dyeVAAcigjThKKrovpJwFHeSREqmiqmyMYcYK/ywNiX99ZPWfdGu5EuhJvcP/q5XjmiED1u4R5ebdY+L1mRdLII9pyb85LUWRdnQaWZBfWK47AEahCK2Bqw+Nboj8NxGTuGHMxIiNhMSILspQLftUfDuz5zHtIDxw=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ssp-idp.mm-local.com/simplesaml/saml2/idp/SingleLogoutService.php"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ssp-idp.mm-local.com/simplesaml/saml2/idp/SSOService.php"/>
+  </md:IDPSSODescriptor>
+  <md:ContactPerson contactType="technical">
+    <md:GivenName>Administrator</md:GivenName>
+    <md:EmailAddress>mailto:admin@mm-local.com</md:EmailAddress>
+  </md:ContactPerson>
+</md:EntityDescriptor>

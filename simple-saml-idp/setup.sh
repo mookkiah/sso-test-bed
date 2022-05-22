@@ -1,6 +1,7 @@
 #!/bin/sh
 kubectl create namespace ssp-idp
 kubectl config set-context --current --namespace ssp-idp
+cd `git rev-parse --show-toplevel`/simple-saml-idp
 # We need SSL certificate for IDP to encrypt/sign based on the need
 # mkdir -p cert
 # openssl req -newkey rsa:2048 -new -x509 -nodes -keyout cert/server.pem -out cert/server.crt -config ssp-idp-csr.conf

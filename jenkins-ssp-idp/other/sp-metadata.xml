@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_a435f8c809a14a929e7d8c095c099727c71a9b4" entityID="https://jenkins-saml-sp.mm-local.com/securityRealm/finishLogin" validUntil="2042-05-22T11:32:12.948Z">
+    <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#hmac-sha256"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#hmac-sha384"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#hmac-sha512"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#hmac-sha1"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    </md:Extensions>
+    <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
+        <md:Extensions xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init">
+            <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://jenkins-saml-sp.mm-local.com/securityRealm/finishLogin"/>
+        </md:Extensions>
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIC+TCCAeGgAwIBAgIUcF5Qglyf6alc99QHtE/SfRkhTWUwDQYJKoZIhvcNAQELBQAwFzEVMBMG
+A1UEAwwMU0FNTC1qZW5raW5zMB4XDTIyMDUyMjExMjgyMloXDTIzMDUyMjExMjgyMlowFzEVMBMG
+A1UEAwwMU0FNTC1qZW5raW5zMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA30drUT6S
+xB326C7S4a82XqErkHtxWINdMiEhZAwIn4KiUDC5g1XqXAKVELXR81ooP7svKlcg69QUTKHbwARd
+PzLgXSabzKzuozeO30DKFa+nfvITDC7CvLutAyyX2MKoEV8w+ITOx7LbCMFjEeVl4AAnW3uSkp3Z
+Pihm9R5c6WA/IgroC29KqyhFmbGj/DSlvmIbsm4IXYI11m1Nzmz3fKEkBHy8cXM4qyZ6q2DwFI53
+/kqM91CYG+MV2k4MyqMCtK3jzpq35FrVO59iNzFwvAHReop50THI2H0GAAd4Z1EFt52sDicyN/Va
+eGzHWVMmfby6TFtrwqv12O7hRxv3ywIDAQABoz0wOzAdBgNVHQ4EFgQU71RGnBlre9nGa5jdgBot
++IWLnGswGgYDVR0RBBMwEYIPY249U0FNTC1qZW5raW5zMA0GCSqGSIb3DQEBCwUAA4IBAQByHQoj
+w7Bu+JLuz1BYc6Wup4hSULjw98tQNpt8Qz0mRtkFRqBvYteAcG4KtGFRZPPOExq18m6BZCHoOs1x
+ZueYXf/1dI+xBxe4S5z5obYmIPRZC7NUIcL+DCbH2a1kVTfuYH4XV5+V2vHB/2NR7M02ZY6vriyR
+6loqNbufLVCBHPAKuUtSnI8KdNqyfMikWBWionSB7x3Vqfr1KJqxYidfzQd8TJLKObloCQ60Tx9h
+6Z2QwQ3A90++jN+D33cpEw2P1jTfklRj7YE/LleANHUWEpSb1RZ1sWHriPstFPtctAD3CWUpHpdk
+pLLek3Xdw93ITUqmZj02v0X1hSqPpcTf</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:KeyDescriptor use="encryption">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIC+TCCAeGgAwIBAgIUcF5Qglyf6alc99QHtE/SfRkhTWUwDQYJKoZIhvcNAQELBQAwFzEVMBMG
+A1UEAwwMU0FNTC1qZW5raW5zMB4XDTIyMDUyMjExMjgyMloXDTIzMDUyMjExMjgyMlowFzEVMBMG
+A1UEAwwMU0FNTC1qZW5raW5zMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA30drUT6S
+xB326C7S4a82XqErkHtxWINdMiEhZAwIn4KiUDC5g1XqXAKVELXR81ooP7svKlcg69QUTKHbwARd
+PzLgXSabzKzuozeO30DKFa+nfvITDC7CvLutAyyX2MKoEV8w+ITOx7LbCMFjEeVl4AAnW3uSkp3Z
+Pihm9R5c6WA/IgroC29KqyhFmbGj/DSlvmIbsm4IXYI11m1Nzmz3fKEkBHy8cXM4qyZ6q2DwFI53
+/kqM91CYG+MV2k4MyqMCtK3jzpq35FrVO59iNzFwvAHReop50THI2H0GAAd4Z1EFt52sDicyN/Va
+eGzHWVMmfby6TFtrwqv12O7hRxv3ywIDAQABoz0wOzAdBgNVHQ4EFgQU71RGnBlre9nGa5jdgBot
++IWLnGswGgYDVR0RBBMwEYIPY249U0FNTC1qZW5raW5zMA0GCSqGSIb3DQEBCwUAA4IBAQByHQoj
+w7Bu+JLuz1BYc6Wup4hSULjw98tQNpt8Qz0mRtkFRqBvYteAcG4KtGFRZPPOExq18m6BZCHoOs1x
+ZueYXf/1dI+xBxe4S5z5obYmIPRZC7NUIcL+DCbH2a1kVTfuYH4XV5+V2vHB/2NR7M02ZY6vriyR
+6loqNbufLVCBHPAKuUtSnI8KdNqyfMikWBWionSB7x3Vqfr1KJqxYidfzQd8TJLKObloCQ60Tx9h
+6Z2QwQ3A90++jN+D33cpEw2P1jTfklRj7YE/LleANHUWEpSb1RZ1sWHriPstFPtctAD3CWUpHpdk
+pLLek3Xdw93ITUqmZj02v0X1hSqPpcTf</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://jenkins-saml-sp.mm-local.com/securityRealm/finishLogin?logoutendpoint=true"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://jenkins-saml-sp.mm-local.com/securityRealm/finishLogin?logoutendpoint=true"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://jenkins-saml-sp.mm-local.com/securityRealm/finishLogin?logoutendpoint=true"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://jenkins-saml-sp.mm-local.com/securityRealm/finishLogin?logoutendpoint=true"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://jenkins-saml-sp.mm-local.com/securityRealm/finishLogin" index="0"/>
+    </md:SPSSODescriptor>
+</md:EntityDescriptor>
