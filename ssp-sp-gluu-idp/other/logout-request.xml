@@ -1,0 +1,14 @@
+<samlp:LogoutRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                     ID="_5d021b30c56b0654d88cdf6f3fcd830a40bc91f917"
+                     Version="2.0"
+                     IssueInstant="2022-05-22T11:52:17Z"
+                     Destination="https://centos423.gluu.org/idp/profile/SAML2/Redirect/SLO"
+                     >
+    <saml:Issuer>https://ssp-sp-gluu-idp.mm-local.com/simplesaml/module.php/saml/sp/metadata.php/default-sp</saml:Issuer>
+    <saml:NameID NameQualifier="https://centos423.gluu.org/idp/shibboleth"
+                 SPNameQualifier="https://ssp-sp-gluu-idp.mm-local.com/simplesaml/module.php/saml/sp/metadata.php/default-sp"
+                 Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
+                 >AAdzZWNyZXQxbBsJtXkfpdjeD5C4NBgbSfYamxtpIRyE7omBKR+MfklMc4MKh/SQeYTMb9DzVwGMNDBvg9yifj9zIJkp7csekaGyuUT+1T+rk4gLd5xo4iBlrw2DqB/cVk4QmJEQ9CGrAO0HknpylJVbJNjKsjz9d3JD59uvkj8W/xS2jeLd52zO42ZaeoS8B7db/I/iIcxV/ILKl0o=</saml:NameID>
+    <samlp:SessionIndex>_8b3f628cb1eab1e063f2e896958e59fe</samlp:SessionIndex>
+</samlp:LogoutRequest>

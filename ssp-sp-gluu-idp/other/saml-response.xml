@@ -1,0 +1,83 @@
+<saml2p:Response xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
+                 Destination="https://ssp-sp-gluu-idp.mm-local.com/simplesaml/module.php/saml/sp/saml2-acs.php/default-sp"
+                 ID="_9f47171e299e25e2c73144b6c8dfec21"
+                 InResponseTo="_30d7a5c02d6e8c2b58fda6558a6064d7b69618501f"
+                 IssueInstant="2022-05-19T22:43:07.175Z"
+                 Version="2.0"
+                 >
+    <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">https://centos423.gluu.org/idp/shibboleth</saml2:Issuer>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+            <ds:Reference URI="#_9f47171e299e25e2c73144b6c8dfec21">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+                <ds:DigestValue>f6qoVcwjnOneCCIrZ3nxN44EDPq4Yyf3MkHjK483rNo=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>Sg6G0vQuCGk0iSlbKlk6Q/68oOMBueiawYlVhsouy02ZX8WtIzXvNn/VPsk8oOpitV6DhwDtaxqoE+/XT9HGk+TEy+Y9qK6YI0gE/YeEuN9IHGcBVG0J0w634cWSJ2dTOzKMqcP4nw64Lcqzu0loTiIszxdVqlA7QgU+suuieXQ20pnEnUc6uGLWdVsP2LwShBpSQ5JUOuojj6qcyVVpbGMswCJjed4D7r9zyt2vTVX+dD4TjJyHdxnGvpdcQpdMdFsOFASTa+49d2r0rleIRSp+Jspx9WExXhaM2cMt8gEjBcJ+sJyuav2zOAfcyYw+ArqqZXjyM2CkEAA7Dk1nkg==</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>MIIDdjCCAl4CCQDHUGQaLIe6RTANBgkqhkiG9w0BAQsFADB9MQswCQYDVQQGEwJVUzELMAkGA1UE
+CAwCVFgxDzANBgNVBAcMBkF1c3RpbjESMBAGA1UECgwJR2x1dSBJbmMuMRswGQYDVQQDDBJjZW50
+b3M0MjMuZ2x1dS5vcmcxHzAdBgkqhkiG9w0BCQEWEHN1cHBvcnRAZ2x1dS5vcmcwHhcNMjIwNDE5
+MDUzMTM3WhcNMjMwNDE5MDUzMTM3WjB9MQswCQYDVQQGEwJVUzELMAkGA1UECAwCVFgxDzANBgNV
+BAcMBkF1c3RpbjESMBAGA1UECgwJR2x1dSBJbmMuMRswGQYDVQQDDBJjZW50b3M0MjMuZ2x1dS5v
+cmcxHzAdBgkqhkiG9w0BCQEWEHN1cHBvcnRAZ2x1dS5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IB
+DwAwggEKAoIBAQCqUsaeARvoxQexDvuakeSoJg8tpMRZdz5AExXAYVRjX0T8ioml+54KBsS0YOfd
+8Gt4MV3KvU82RyqLmwa8rfGBY7FtsjcVDBHB9el1XPZB8TNLe/mYkI6S1RKJQuNxNi7ba4ZZuWNX
+AS8aHPnzas/KMFFqEXabjN3MCptE3jTNDllg0PLjO09c9kNOeWlmWzEpB5kEkFVTxBKsxHzwfW0t
+trhf6OeRrV0do/kyh0i9NyARgn4KBbh1uzWgL9S2OGTUcmjwM1VpCVOJ9L1BtPGOzRHS7ysZ7O11
+RDarPkztXIk1fK+eUpfRJNnccGnsvSzczF5NccOQfjP03ZHS4sHBAgMBAAEwDQYJKoZIhvcNAQEL
+BQADggEBAEl60/eFm+TO7CWFCCszItvJA2fNgwfuYvFI9VmoChAZhKVp1qng1tBzO6aBzgdJvZ/y
+p3q+603Wzu0bzlAV16ohgCA+U6ztF7/H7WSZqGKjJ4oXl46C9Hwp6usMn9Kq7kPEGh8vZqqO0krK
+3z6PRjGsZ0FIZ6c2D+qS+yZbetixLhay+Z9CrnBS1gs641K50cMNKL1Iais2xTtCoSCLSt4Y5h6+
+HHT6yznUTy/cmdjXyzqQBBBjCIuAfFKoGzVtaA8cyRo6Q6qtKQOu4N8sMDKgEBWrUqk+aft2kQ6W
+Z6lqUtuOvkxbp/7CIS3XdAzDNe1oRO7YYD7lV6ZHuxzQsXA=</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+    <saml2p:Status>
+        <saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success" />
+    </saml2p:Status>
+    <saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                     ID="_1d38172411d651d1135b4bdd9d8b1c51"
+                     IssueInstant="2022-05-19T22:43:07.175Z"
+                     Version="2.0"
+                     >
+        <saml2:Issuer>https://centos423.gluu.org/idp/shibboleth</saml2:Issuer>
+        <saml2:Subject>
+            <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
+                          NameQualifier="https://centos423.gluu.org/idp/shibboleth"
+                          SPNameQualifier="https://ssp-sp-gluu-idp.mm-local.com/simplesaml/module.php/saml/sp/metadata.php/default-sp"
+                          xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                          >AAdzZWNyZXQxmN2CUZhX3BUOFDbqhqj8qxEtp8Ro0h4qWtflfO/0dZHVD2YlLg2OlYKm+ZgGBC4nkAodUL3jZ97a/JIhC1RhBdpAH9ACyWpicdV/eA9U2/NREF2iomHkGbp1CF2mYOl9NWZu3NePj6V9biy/MLp6l9hUDp4RxAcmXlpNdRRy3NXjEqSsg3wgT/NKNfgR+avn2gs=</saml2:NameID>
+            <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+                <saml2:SubjectConfirmationData Address="73.192.56.229"
+                                               InResponseTo="_30d7a5c02d6e8c2b58fda6558a6064d7b69618501f"
+                                               NotOnOrAfter="2022-05-19T22:48:07.183Z"
+                                               Recipient="https://ssp-sp-gluu-idp.mm-local.com/simplesaml/module.php/saml/sp/saml2-acs.php/default-sp"
+                                               />
+            </saml2:SubjectConfirmation>
+        </saml2:Subject>
+        <saml2:Conditions NotBefore="2022-05-19T22:43:07.175Z"
+                          NotOnOrAfter="2022-05-19T22:48:07.175Z"
+                          >
+            <saml2:AudienceRestriction>
+                <saml2:Audience>https://ssp-sp-gluu-idp.mm-local.com/simplesaml/module.php/saml/sp/metadata.php/default-sp</saml2:Audience>
+            </saml2:AudienceRestriction>
+        </saml2:Conditions>
+        <saml2:AuthnStatement AuthnInstant="2022-05-19T22:43:07.067Z"
+                              SessionIndex="_e27a3230a5cce535d8c79d1ef2ca2cd1"
+                              >
+            <saml2:SubjectLocality Address="73.192.56.229" />
+            <saml2:AuthnContext>
+                <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml2:AuthnContextClassRef>
+            </saml2:AuthnContext>
+        </saml2:AuthnStatement>
+    </saml2:Assertion>
+</saml2p:Response>

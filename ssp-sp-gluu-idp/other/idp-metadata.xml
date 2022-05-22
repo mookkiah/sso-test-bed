@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                  xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                  xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                  entityID="https://centos423.gluu.org/idp/shibboleth">
+
+    <IDPSSODescriptor errorURL="https://centos423.gluu.org/identity/feedback.htm" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">centos423.gluu.org</shibmd:Scope>
+        </Extensions>
+
+        <KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+
+MIIDdjCCAl4CCQDHUGQaLIe6RTANBgkqhkiG9w0BAQsFADB9MQswCQYDVQQGEwJV
+UzELMAkGA1UECAwCVFgxDzANBgNVBAcMBkF1c3RpbjESMBAGA1UECgwJR2x1dSBJ
+bmMuMRswGQYDVQQDDBJjZW50b3M0MjMuZ2x1dS5vcmcxHzAdBgkqhkiG9w0BCQEW
+EHN1cHBvcnRAZ2x1dS5vcmcwHhcNMjIwNDE5MDUzMTM3WhcNMjMwNDE5MDUzMTM3
+WjB9MQswCQYDVQQGEwJVUzELMAkGA1UECAwCVFgxDzANBgNVBAcMBkF1c3RpbjES
+MBAGA1UECgwJR2x1dSBJbmMuMRswGQYDVQQDDBJjZW50b3M0MjMuZ2x1dS5vcmcx
+HzAdBgkqhkiG9w0BCQEWEHN1cHBvcnRAZ2x1dS5vcmcwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQCqUsaeARvoxQexDvuakeSoJg8tpMRZdz5AExXAYVRj
+X0T8ioml+54KBsS0YOfd8Gt4MV3KvU82RyqLmwa8rfGBY7FtsjcVDBHB9el1XPZB
+8TNLe/mYkI6S1RKJQuNxNi7ba4ZZuWNXAS8aHPnzas/KMFFqEXabjN3MCptE3jTN
+Dllg0PLjO09c9kNOeWlmWzEpB5kEkFVTxBKsxHzwfW0ttrhf6OeRrV0do/kyh0i9
+NyARgn4KBbh1uzWgL9S2OGTUcmjwM1VpCVOJ9L1BtPGOzRHS7ysZ7O11RDarPkzt
+XIk1fK+eUpfRJNnccGnsvSzczF5NccOQfjP03ZHS4sHBAgMBAAEwDQYJKoZIhvcN
+AQELBQADggEBAEl60/eFm+TO7CWFCCszItvJA2fNgwfuYvFI9VmoChAZhKVp1qng
+1tBzO6aBzgdJvZ/yp3q+603Wzu0bzlAV16ohgCA+U6ztF7/H7WSZqGKjJ4oXl46C
+9Hwp6usMn9Kq7kPEGh8vZqqO0krK3z6PRjGsZ0FIZ6c2D+qS+yZbetixLhay+Z9C
+rnBS1gs641K50cMNKL1Iais2xTtCoSCLSt4Y5h6+HHT6yznUTy/cmdjXyzqQBBBj
+CIuAfFKoGzVtaA8cyRo6Q6qtKQOu4N8sMDKgEBWrUqk+aft2kQ6WZ6lqUtuOvkxb
+p/7CIS3XdAzDNe1oRO7YYD7lV6ZHuxzQsXA=
+
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <KeyDescriptor use="encryption">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+
+MIIDdjCCAl4CCQDTtChkmDkd0jANBgkqhkiG9w0BAQsFADB9MQswCQYDVQQGEwJV
+UzELMAkGA1UECAwCVFgxDzANBgNVBAcMBkF1c3RpbjESMBAGA1UECgwJR2x1dSBJ
+bmMuMRswGQYDVQQDDBJjZW50b3M0MjMuZ2x1dS5vcmcxHzAdBgkqhkiG9w0BCQEW
+EHN1cHBvcnRAZ2x1dS5vcmcwHhcNMjIwNDE5MDUzMTM2WhcNMjMwNDE5MDUzMTM2
+WjB9MQswCQYDVQQGEwJVUzELMAkGA1UECAwCVFgxDzANBgNVBAcMBkF1c3RpbjES
+MBAGA1UECgwJR2x1dSBJbmMuMRswGQYDVQQDDBJjZW50b3M0MjMuZ2x1dS5vcmcx
+HzAdBgkqhkiG9w0BCQEWEHN1cHBvcnRAZ2x1dS5vcmcwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQChmRLJD6n5wuG4vn2/R/Toi5IfZXjm2AUxJKbu4lNo
+NYIVxa7S11GkZb06eE2qPqrNET6IRfJLwWc89sH8z1lEoJYDVq/JsQgIB39Q/YYe
+b/twvwgNh59PzB9FaDmKEpqwwcqJFtaGNORVGfpOohmcMNW5cXwVLrvPKti8Qcoq
+V4oZiNaGMIwklbIG6g9bziZeIoPDOI4ZbrCxRLsjMB5waSOY8uQTf5uaLhZBpOAD
+aypyfuwc11HsQ7VJMmgGYy+R2q8eWaxWadw2pp0eFG7gcYmCdLLPYO0io66Q/CIJ
+nE2K+5ZQzKMJVvG/rCKSEKnU+GE0GxxC6O5AiHVL56vdAgMBAAEwDQYJKoZIhvcN
+AQELBQADggEBADXIbbi6rrM60zG4EranlCJORghMnbREby9/4ZjxUHlBktwHM+TS
+XHTsUn3hz+JW7nJVHpwF87Cx7h2Pbgfs5gCifOC3osb5Da1dHtSYjgfHDBXG6gwP
+yRtzXzTCONfxQL+U+K41avNdaFDVrJsxZOBIj9IuZJbi5DaflAbpzunXhoZIYimS
+0hfiz24KG5sarJQAgd48az7PxAxqEqXaxTGTugHmoDCU5MpM9YcXHp43bh9UFwmI
+JRKTqVdmnfnaM34oomSuKxxijH32F8t3EMjrTp/LwWtE3IvP3gEP4oU3gB6ViHEZ
+gVcxLdXUClOqfDVJBbZchNH5F9XpoFWi4uk=
+
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                                   Location="https://centos423.gluu.org/idp/profile/SAML2/SOAP/ArtifactResolution"
+                                   index="1"/>
+        
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://centos423.gluu.org/idp/profile/SAML2/Redirect/SLO"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://centos423.gluu.org/idp/profile/SAML2/POST/SLO"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://centos423.gluu.org/idp/profile/SAML2/POST-SimpleSign/SLO"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://centos423.gluu.org/idp/profile/SAML2/SOAP/SLO"/>
+        
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+        
+        <SingleSignOnService Binding="urn:mace:shibboleth:2.0:profiles:AuthnRequest" Location="https://centos423.gluu.org/idp/profile/SAML2/Unsolicited/SSO"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://centos423.gluu.org/idp/profile/SAML2/POST/SSO"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://centos423.gluu.org/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://centos423.gluu.org/idp/profile/SAML2/Redirect/SSO"/>
+
+    </IDPSSODescriptor>
+    
+    
+    <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">centos423.gluu.org</shibmd:Scope>
+        </Extensions>
+
+        <KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+
+MIIDdjCCAl4CCQDHUGQaLIe6RTANBgkqhkiG9w0BAQsFADB9MQswCQYDVQQGEwJV
+UzELMAkGA1UECAwCVFgxDzANBgNVBAcMBkF1c3RpbjESMBAGA1UECgwJR2x1dSBJ
+bmMuMRswGQYDVQQDDBJjZW50b3M0MjMuZ2x1dS5vcmcxHzAdBgkqhkiG9w0BCQEW
+EHN1cHBvcnRAZ2x1dS5vcmcwHhcNMjIwNDE5MDUzMTM3WhcNMjMwNDE5MDUzMTM3
+WjB9MQswCQYDVQQGEwJVUzELMAkGA1UECAwCVFgxDzANBgNVBAcMBkF1c3RpbjES
+MBAGA1UECgwJR2x1dSBJbmMuMRswGQYDVQQDDBJjZW50b3M0MjMuZ2x1dS5vcmcx
+HzAdBgkqhkiG9w0BCQEWEHN1cHBvcnRAZ2x1dS5vcmcwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQCqUsaeARvoxQexDvuakeSoJg8tpMRZdz5AExXAYVRj
+X0T8ioml+54KBsS0YOfd8Gt4MV3KvU82RyqLmwa8rfGBY7FtsjcVDBHB9el1XPZB
+8TNLe/mYkI6S1RKJQuNxNi7ba4ZZuWNXAS8aHPnzas/KMFFqEXabjN3MCptE3jTN
+Dllg0PLjO09c9kNOeWlmWzEpB5kEkFVTxBKsxHzwfW0ttrhf6OeRrV0do/kyh0i9
+NyARgn4KBbh1uzWgL9S2OGTUcmjwM1VpCVOJ9L1BtPGOzRHS7ysZ7O11RDarPkzt
+XIk1fK+eUpfRJNnccGnsvSzczF5NccOQfjP03ZHS4sHBAgMBAAEwDQYJKoZIhvcN
+AQELBQADggEBAEl60/eFm+TO7CWFCCszItvJA2fNgwfuYvFI9VmoChAZhKVp1qng
+1tBzO6aBzgdJvZ/yp3q+603Wzu0bzlAV16ohgCA+U6ztF7/H7WSZqGKjJ4oXl46C
+9Hwp6usMn9Kq7kPEGh8vZqqO0krK3z6PRjGsZ0FIZ6c2D+qS+yZbetixLhay+Z9C
+rnBS1gs641K50cMNKL1Iais2xTtCoSCLSt4Y5h6+HHT6yznUTy/cmdjXyzqQBBBj
+CIuAfFKoGzVtaA8cyRo6Q6qtKQOu4N8sMDKgEBWrUqk+aft2kQ6WZ6lqUtuOvkxb
+p/7CIS3XdAzDNe1oRO7YYD7lV6ZHuxzQsXA=
+
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <KeyDescriptor use="encryption">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+
+MIIDdjCCAl4CCQDTtChkmDkd0jANBgkqhkiG9w0BAQsFADB9MQswCQYDVQQGEwJV
+UzELMAkGA1UECAwCVFgxDzANBgNVBAcMBkF1c3RpbjESMBAGA1UECgwJR2x1dSBJ
+bmMuMRswGQYDVQQDDBJjZW50b3M0MjMuZ2x1dS5vcmcxHzAdBgkqhkiG9w0BCQEW
+EHN1cHBvcnRAZ2x1dS5vcmcwHhcNMjIwNDE5MDUzMTM2WhcNMjMwNDE5MDUzMTM2
+WjB9MQswCQYDVQQGEwJVUzELMAkGA1UECAwCVFgxDzANBgNVBAcMBkF1c3RpbjES
+MBAGA1UECgwJR2x1dSBJbmMuMRswGQYDVQQDDBJjZW50b3M0MjMuZ2x1dS5vcmcx
+HzAdBgkqhkiG9w0BCQEWEHN1cHBvcnRAZ2x1dS5vcmcwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQChmRLJD6n5wuG4vn2/R/Toi5IfZXjm2AUxJKbu4lNo
+NYIVxa7S11GkZb06eE2qPqrNET6IRfJLwWc89sH8z1lEoJYDVq/JsQgIB39Q/YYe
+b/twvwgNh59PzB9FaDmKEpqwwcqJFtaGNORVGfpOohmcMNW5cXwVLrvPKti8Qcoq
+V4oZiNaGMIwklbIG6g9bziZeIoPDOI4ZbrCxRLsjMB5waSOY8uQTf5uaLhZBpOAD
+aypyfuwc11HsQ7VJMmgGYy+R2q8eWaxWadw2pp0eFG7gcYmCdLLPYO0io66Q/CIJ
+nE2K+5ZQzKMJVvG/rCKSEKnU+GE0GxxC6O5AiHVL56vdAgMBAAEwDQYJKoZIhvcN
+AQELBQADggEBADXIbbi6rrM60zG4EranlCJORghMnbREby9/4ZjxUHlBktwHM+TS
+XHTsUn3hz+JW7nJVHpwF87Cx7h2Pbgfs5gCifOC3osb5Da1dHtSYjgfHDBXG6gwP
+yRtzXzTCONfxQL+U+K41avNdaFDVrJsxZOBIj9IuZJbi5DaflAbpzunXhoZIYimS
+0hfiz24KG5sarJQAgd48az7PxAxqEqXaxTGTugHmoDCU5MpM9YcXHp43bh9UFwmI
+JRKTqVdmnfnaM34oomSuKxxijH32F8t3EMjrTp/LwWtE3IvP3gEP4oU3gB6ViHEZ
+gVcxLdXUClOqfDVJBbZchNH5F9XpoFWi4uk=
+
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+
+        <AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding"
+                          Location="https://centos423.gluu.org/idp/profile/SAML1/SOAP/AttributeQuery"/>
+
+        <AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                          Location="https://centos423.gluu.org/idp/profile/SAML2/SOAP/AttributeQuery"/>
+
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+
+    </AttributeAuthorityDescriptor>
+
+    <Organization>
+        <OrganizationName xml:lang="en">Gluu Inc.</OrganizationName>
+        <OrganizationDisplayName xml:lang="en">Gluu Inc.</OrganizationDisplayName>
+        <OrganizationURL xml:lang="en">https://centos423.gluu.org</OrganizationURL>
+    </Organization>
+
+</EntityDescriptor>

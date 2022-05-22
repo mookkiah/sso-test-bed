@@ -1,13 +1,17 @@
 #!/bin/sh
 
-kubectl create namespace ssp-sp-gluu-idp
+kubectl create namespace ssp-sp-gluu-idp 
 kubectl config set-context --current --namespace ssp-sp-gluu-idp
+cd `git rev-parse --show-toplevel`/ssp-sp-gluu-idp
 ##### One Time or Validation commands are commented
 # We need SSL certificate for SP to encrypt/sign based on the need
-#mkdir cert
-#openssl req -newkey rsa:2048 -keyout cert/server.pem -out cert/server.crt -config csr.conf
+#mkdir -p cert
+#openssl req -newkey rsa:2048 -new -x509 -nodes -keyout cert/server.pem -out cert/server.crt -config csr.conf
+#openssl x509 -in cert/server.crt -text -noout
 #sudo bash -c 'echo "127.0.0.1    ssp-sp-gluu-idp.mm-local.com" >> /etc/hosts'
-#kubectl -n ssp-sp-gluu-idp  create configmap x509keycert --from-file=cert/server.pem --from-file=cert/server.crt
+
+kubectl -n ssp-sp-gluu-idp delete secret x509keycert --ignore-not-found
+kubectl -n ssp-sp-gluu-idp create secret generic x509keycert --from-file=cert/server.pem --from-file=cert/server.crt
 
 kubectl -n ssp-sp-gluu-idp  delete configmap config.php --ignore-not-found
 kubectl -n ssp-sp-gluu-idp  create configmap config.php --from-file=config/config.php

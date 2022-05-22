@@ -1,0 +1,13 @@
+<samlp:LogoutResponse xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+                      xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                      ID="_3c9f98939df634bf2e0cf06357b8a709b6c894fbee"
+                      Version="2.0"
+                      IssueInstant="2022-05-22T12:04:41Z"
+                      Destination="https://centos423.gluu.org/idp/profile/SAML2/Redirect/SLO"
+                      InResponseTo="_de6afd12977d9f7a04b785d64eb4d546"
+                      >
+    <saml:Issuer>https://ssp-sp-gluu-idp.mm-local.com/simplesaml/module.php/saml/sp/metadata.php/default-sp</saml:Issuer>
+    <samlp:Status>
+        <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success" />
+    </samlp:Status>
+</samlp:LogoutResponse>

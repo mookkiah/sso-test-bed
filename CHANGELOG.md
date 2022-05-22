@@ -8,6 +8,11 @@
 - [Jenkins SAML plugin](https://plugins.jenkins.io/saml/)
 - JcasC used.
 
+### ssp-sp-gluu-idp
+- using secret for x509 key and secret
+- added project level README.md to have context related to project
+- added other files and image for learning or quick reference
+
 
 ## May 21, 2022
 
