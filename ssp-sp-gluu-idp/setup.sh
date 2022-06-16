@@ -30,8 +30,12 @@ kubectl -n $NAMESPACE  create configmap saml20-idp-remote.php --from-file=metada
 kubectl -n $NAMESPACE  delete configmap httpdconf --ignore-not-found
 kubectl -n $NAMESPACE  create configmap httpdconf --from-file=httpd-conf/httpd.conf
 
-kubectl -n $NAMESPACE  apply -f deployment.yaml 
+kubectl -n $NAMESPACE  delete -f deployment.yaml 
+kubectl -n $NAMESPACE  create -f deployment.yaml 
+
 kubectl -n $NAMESPACE  apply -f service.yaml
 kubectl -n $NAMESPACE  apply -f ingress.yaml    
 
 open https://ssp-sp-gluu-idp.mm-local.com/simplesaml/
+
+kubectl -n $NAMESPACE logs -f -l app=ssp-sp
