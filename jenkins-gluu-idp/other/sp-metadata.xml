@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    - JENKINS will create this metadata on fresh install/SAML config 
+    - Keep only one NameIDFormat which brings the Subject NameID in SAMLResponse 
+-->
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_a1a862c00fc84d9cb363f0e88b460f8149410f9" entityID="https://jenkins-gluu-idp.example.com/securityRealm/finishLogin" validUntil="2042-06-19T14:02:47.320Z">
+    <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#hmac-sha256"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#hmac-sha384"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#hmac-sha512"/>
+        <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#hmac-sha1"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    </md:Extensions>
+    <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
+        <md:Extensions xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init">
+            <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://jenkins-gluu-idp.example.com/securityRealm/finishLogin"/>
+        </md:Extensions>
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIC+jCCAeKgAwIBAgIVAPG2w6nYvPqmrW3T/WYT0mNd2ZOHMA0GCSqGSIb3DQEBCwUAMBcxFTAT
+BgNVBAMMDFNBTUwtamVua2luczAeFw0yMjA2MTkxMzQ1MjRaFw0yMzA2MTkxMzQ1MjRaMBcxFTAT
+BgNVBAMMDFNBTUwtamVua2luczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ4cMMzo
+wNf8/cPstkZSdB8TIxAZb5xHM1DEcUYyvJf2AchUt8yilC47SlawkKjPZaAx7SliyAxsa7v8DHnX
+k3qeouICFcwmaO59Wf4Wibc5svMTtqdJlr6oyUsl7IDTpqwiOrpcbp7cE2oKW90oO1oeT+F9q+uk
+scUt7BdN/nW0gyrz0okx3i9MCjnX4DII53iUZlJ1wLXapgZc/hurk5rsfqmya0SFoJdoEeNtpSCB
+WZWrJ7yZ718Y9bY1QcHLtQ18dnhX2sWiI9RsfAghPD67GN+Z5W8w7NrntUJid3N2d+CdBDEyHYGs
+5mL9k7Rvfo+xpWbMhBtvJtE2Qfiy0HcCAwEAAaM9MDswHQYDVR0OBBYEFH2q2KtEVY+lZKH1gxZO
+MCNk6992MBoGA1UdEQQTMBGCD2NuPVNBTUwtamVua2luczANBgkqhkiG9w0BAQsFAAOCAQEADsKk
+jRXPdrRpCAwoWWHEq7lmXeDsT3BU9OrgBK7M3ea7USiAmNCM4Fn3JeQ6PbqOISxdybuccvcGrQ3M
+ygFDv4FiFDXx0K31BfX+zj7dpkaPQQ4ej/MDS6aJFaWxEIbXD+Sh364MU27FNjRUH9KjtU/uS6pB
+2UWgfzTNbzwzboZNQkKlRYMOD4vITx1yWYGviUtug592vNKengSBAO6CwNUqrm5le3X8PgvGI1NZ
+yHy0MvB7WFxmjLIrU0Isq4St/khzn5np5voTyaiPmVgiPjctNjX0FgkakRmRGoiukf97E3N9ZF6x
+RwCqwqgpK3e7IE0d4FeIh3XbaOAXJHS10g==</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:KeyDescriptor use="encryption">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIC+jCCAeKgAwIBAgIVAPG2w6nYvPqmrW3T/WYT0mNd2ZOHMA0GCSqGSIb3DQEBCwUAMBcxFTAT
+BgNVBAMMDFNBTUwtamVua2luczAeFw0yMjA2MTkxMzQ1MjRaFw0yMzA2MTkxMzQ1MjRaMBcxFTAT
+BgNVBAMMDFNBTUwtamVua2luczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ4cMMzo
+wNf8/cPstkZSdB8TIxAZb5xHM1DEcUYyvJf2AchUt8yilC47SlawkKjPZaAx7SliyAxsa7v8DHnX
+k3qeouICFcwmaO59Wf4Wibc5svMTtqdJlr6oyUsl7IDTpqwiOrpcbp7cE2oKW90oO1oeT+F9q+uk
+scUt7BdN/nW0gyrz0okx3i9MCjnX4DII53iUZlJ1wLXapgZc/hurk5rsfqmya0SFoJdoEeNtpSCB
+WZWrJ7yZ718Y9bY1QcHLtQ18dnhX2sWiI9RsfAghPD67GN+Z5W8w7NrntUJid3N2d+CdBDEyHYGs
+5mL9k7Rvfo+xpWbMhBtvJtE2Qfiy0HcCAwEAAaM9MDswHQYDVR0OBBYEFH2q2KtEVY+lZKH1gxZO
+MCNk6992MBoGA1UdEQQTMBGCD2NuPVNBTUwtamVua2luczANBgkqhkiG9w0BAQsFAAOCAQEADsKk
+jRXPdrRpCAwoWWHEq7lmXeDsT3BU9OrgBK7M3ea7USiAmNCM4Fn3JeQ6PbqOISxdybuccvcGrQ3M
+ygFDv4FiFDXx0K31BfX+zj7dpkaPQQ4ej/MDS6aJFaWxEIbXD+Sh364MU27FNjRUH9KjtU/uS6pB
+2UWgfzTNbzwzboZNQkKlRYMOD4vITx1yWYGviUtug592vNKengSBAO6CwNUqrm5le3X8PgvGI1NZ
+yHy0MvB7WFxmjLIrU0Isq4St/khzn5np5voTyaiPmVgiPjctNjX0FgkakRmRGoiukf97E3N9ZF6x
+RwCqwqgpK3e7IE0d4FeIh3XbaOAXJHS10g==</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://jenkins-gluu-idp.example.com/securityRealm/finishLogin?logoutendpoint=true"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://jenkins-gluu-idp.example.com/securityRealm/finishLogin?logoutendpoint=true"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://jenkins-gluu-idp.example.com/securityRealm/finishLogin?logoutendpoint=true"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://jenkins-gluu-idp.example.com/securityRealm/finishLogin?logoutendpoint=true"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://jenkins-gluu-idp.example.com/securityRealm/finishLogin" index="0"/>
+    </md:SPSSODescriptor>
+</md:EntityDescriptor>

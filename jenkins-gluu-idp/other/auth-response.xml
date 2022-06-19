@@ -1,0 +1,130 @@
+<saml2p:Response xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
+                 Destination="https://jenkins-gluu-idp.example.com/securityRealm/finishLogin"
+                 ID="_b6429787fa5431fb13ebd522db9e22df"
+                 InResponseTo="_ffe2c81d2914452983f86dfe12b06c677769502"
+                 IssueInstant="2022-06-19T15:45:43.101Z"
+                 Version="2.0"
+                 >
+    <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">https://centos423.gluu.org/idp/shibboleth</saml2:Issuer>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+            <ds:Reference URI="#_b6429787fa5431fb13ebd522db9e22df">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+                <ds:DigestValue>D3INh6BuTT4qqJPzSpjHgYSp7HLh35OayWu83ivuo7w=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>PMIgBvJoFh9c+XdtX6rwBXQPfZf56je7BpGcehcYVEoDBj4KDvfrzSF8+1Dk+/DJ/IB7j/xHgumIT4O7hNyxQjHLnYU5HRp87lRZ5h9apKantvuZobsEkd+lpMnjMqlVvbC4XHfQIGXm2PC7aQxubfuOi/VYCiZ/EQCGlgGoDjQ3pyc2PmCanxgsVNfXiOVe9vcKFHac6Q2mASeVhf7zeHonBD/D9m8WjEJ+o1Kxv2Nn6R/vr8rTlk1heBWdFYDDFO4X2slrNp8pxFm03qy69N9BDDLDUvS/PQXh6Mlz0vp3nC1CA2PsWMzVVtuEFzCasF/YRZ5ez5kYRSl3AszCOg==</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>MIIDdjCCAl4CCQDHUGQaLIe6RTANBgkqhkiG9w0BAQsFADB9MQswCQYDVQQGEwJVUzELMAkGA1UE
+CAwCVFgxDzANBgNVBAcMBkF1c3RpbjESMBAGA1UECgwJR2x1dSBJbmMuMRswGQYDVQQDDBJjZW50
+b3M0MjMuZ2x1dS5vcmcxHzAdBgkqhkiG9w0BCQEWEHN1cHBvcnRAZ2x1dS5vcmcwHhcNMjIwNDE5
+MDUzMTM3WhcNMjMwNDE5MDUzMTM3WjB9MQswCQYDVQQGEwJVUzELMAkGA1UECAwCVFgxDzANBgNV
+BAcMBkF1c3RpbjESMBAGA1UECgwJR2x1dSBJbmMuMRswGQYDVQQDDBJjZW50b3M0MjMuZ2x1dS5v
+cmcxHzAdBgkqhkiG9w0BCQEWEHN1cHBvcnRAZ2x1dS5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IB
+DwAwggEKAoIBAQCqUsaeARvoxQexDvuakeSoJg8tpMRZdz5AExXAYVRjX0T8ioml+54KBsS0YOfd
+8Gt4MV3KvU82RyqLmwa8rfGBY7FtsjcVDBHB9el1XPZB8TNLe/mYkI6S1RKJQuNxNi7ba4ZZuWNX
+AS8aHPnzas/KMFFqEXabjN3MCptE3jTNDllg0PLjO09c9kNOeWlmWzEpB5kEkFVTxBKsxHzwfW0t
+trhf6OeRrV0do/kyh0i9NyARgn4KBbh1uzWgL9S2OGTUcmjwM1VpCVOJ9L1BtPGOzRHS7ysZ7O11
+RDarPkztXIk1fK+eUpfRJNnccGnsvSzczF5NccOQfjP03ZHS4sHBAgMBAAEwDQYJKoZIhvcNAQEL
+BQADggEBAEl60/eFm+TO7CWFCCszItvJA2fNgwfuYvFI9VmoChAZhKVp1qng1tBzO6aBzgdJvZ/y
+p3q+603Wzu0bzlAV16ohgCA+U6ztF7/H7WSZqGKjJ4oXl46C9Hwp6usMn9Kq7kPEGh8vZqqO0krK
+3z6PRjGsZ0FIZ6c2D+qS+yZbetixLhay+Z9CrnBS1gs641K50cMNKL1Iais2xTtCoSCLSt4Y5h6+
+HHT6yznUTy/cmdjXyzqQBBBjCIuAfFKoGzVtaA8cyRo6Q6qtKQOu4N8sMDKgEBWrUqk+aft2kQ6W
+Z6lqUtuOvkxbp/7CIS3XdAzDNe1oRO7YYD7lV6ZHuxzQsXA=</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+    <saml2p:Status xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol">
+        <saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success" />
+    </saml2p:Status>
+    <saml2:EncryptedAssertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+        <xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"
+                            Id="_963ca6c0d20e29a61c581adfbfaf08be"
+                            Type="http://www.w3.org/2001/04/xmlenc#Element"
+                            >
+            <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"
+                                   xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"
+                                   />
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <xenc:EncryptedKey Id="_4bc385cf7c9ff091a48a1b9009d30d44"
+                                   Recipient="https://jenkins-gluu-idp.example.com/securityRealm/finishLogin"
+                                   xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"
+                                   >
+                    <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"
+                                           xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"
+                                           >
+                        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+                                         xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                                         />
+                    </xenc:EncryptionMethod>
+                    <ds:KeyInfo>
+                        <ds:X509Data>
+                            <ds:X509Certificate>MIIC+jCCAeKgAwIBAgIVAPG2w6nYvPqmrW3T/WYT0mNd2ZOHMA0GCSqGSIb3DQEBCwUAMBcxFTAT
+BgNVBAMMDFNBTUwtamVua2luczAeFw0yMjA2MTkxMzQ1MjRaFw0yMzA2MTkxMzQ1MjRaMBcxFTAT
+BgNVBAMMDFNBTUwtamVua2luczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ4cMMzo
+wNf8/cPstkZSdB8TIxAZb5xHM1DEcUYyvJf2AchUt8yilC47SlawkKjPZaAx7SliyAxsa7v8DHnX
+k3qeouICFcwmaO59Wf4Wibc5svMTtqdJlr6oyUsl7IDTpqwiOrpcbp7cE2oKW90oO1oeT+F9q+uk
+scUt7BdN/nW0gyrz0okx3i9MCjnX4DII53iUZlJ1wLXapgZc/hurk5rsfqmya0SFoJdoEeNtpSCB
+WZWrJ7yZ718Y9bY1QcHLtQ18dnhX2sWiI9RsfAghPD67GN+Z5W8w7NrntUJid3N2d+CdBDEyHYGs
+5mL9k7Rvfo+xpWbMhBtvJtE2Qfiy0HcCAwEAAaM9MDswHQYDVR0OBBYEFH2q2KtEVY+lZKH1gxZO
+MCNk6992MBoGA1UdEQQTMBGCD2NuPVNBTUwtamVua2luczANBgkqhkiG9w0BAQsFAAOCAQEADsKk
+jRXPdrRpCAwoWWHEq7lmXeDsT3BU9OrgBK7M3ea7USiAmNCM4Fn3JeQ6PbqOISxdybuccvcGrQ3M
+ygFDv4FiFDXx0K31BfX+zj7dpkaPQQ4ej/MDS6aJFaWxEIbXD+Sh364MU27FNjRUH9KjtU/uS6pB
+2UWgfzTNbzwzboZNQkKlRYMOD4vITx1yWYGviUtug592vNKengSBAO6CwNUqrm5le3X8PgvGI1NZ
+yHy0MvB7WFxmjLIrU0Isq4St/khzn5np5voTyaiPmVgiPjctNjX0FgkakRmRGoiukf97E3N9ZF6x
+RwCqwqgpK3e7IE0d4FeIh3XbaOAXJHS10g==</ds:X509Certificate>
+                        </ds:X509Data>
+                    </ds:KeyInfo>
+                    <xenc:CipherData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">
+                        <xenc:CipherValue>f7DcB3lj5ROAMTvKIvX0HmwnQ1HM+lD7BNVdiGZWZ/mIIUtXKwbDxMukYRGbvzirPxZQ7f4hpS1IUzMUeSqU8q6/gpnTkLgXMVbcoHll+E4h9ddsWQQ+NRB408IHsq9amIuPCx92dNnuIGFzp6GpMYz8I3efaxbKP1z+AgErTexpJblfuiDAKq8k6RX19/g1VhBcnPOakhNIgjovXjahTLPhDZ17hx4UklMy4lvNBrbnW6Kjims18gc165PgKTRabmXCrLGmZRSOlfN7TzdjH5rfD0NOGBv1S2mFba0O/GBnbrAs5GCwGLMjJeMzRVNoqmqY5r4Vv+Ws+IHve0XAyg==</xenc:CipherValue>
+                    </xenc:CipherData>
+                </xenc:EncryptedKey>
+            </ds:KeyInfo>
+            <xenc:CipherData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">
+                <xenc:CipherValue>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</xenc:CipherValue>
+            </xenc:CipherData>
+        </xenc:EncryptedData>
+    </saml2:EncryptedAssertion>
+</saml2p:Response>
+<!--
+Plain text - before encrypting - retrived from Gluu idp-process.log
+<?xml version="1.0" encoding="UTF-8"?><saml2p:Response xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol" ID="_b6429787fa5431fb13ebd522db9e22df" InResponseTo="_ffe2c81d2914452983f86dfe12b06c677769502" IssueInstant="2022-06-19T15:45:43.101Z" Version="2.0">
+    <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">https://centos423.gluu.org/idp/shibboleth</saml2:Issuer>
+    <saml2p:Status>
+        <saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+    </saml2p:Status>
+    <saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" ID="_67f31d205a4689bf424458e50f8a4c98" IssueInstant="2022-06-19T15:45:43.101Z" Version="2.0">
+        <saml2:Issuer>https://centos423.gluu.org/idp/shibboleth</saml2:Issuer>
+        <saml2:Subject>
+            <saml2:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">mahendran</saml2:NameID>
+            <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+                <saml2:SubjectConfirmationData Address="73.192.56.229" InResponseTo="_ffe2c81d2914452983f86dfe12b06c677769502" NotOnOrAfter="2022-06-19T15:50:43.110Z" Recipient="https://jenkins-gluu-idp.example.com/securityRealm/finishLogin"/>
+            </saml2:SubjectConfirmation>
+        </saml2:Subject>
+        <saml2:Conditions NotBefore="2022-06-19T15:45:43.101Z" NotOnOrAfter="2022-06-19T15:50:43.101Z">
+            <saml2:AudienceRestriction>
+                <saml2:Audience>https://jenkins-gluu-idp.example.com/securityRealm/finishLogin</saml2:Audience>
+            </saml2:AudienceRestriction>
+        </saml2:Conditions>
+        <saml2:AuthnStatement AuthnInstant="2022-06-19T14:54:47.639Z" SessionIndex="_5bebbdb282ea5a539cfdeb75ea70dfdf">
+            <saml2:SubjectLocality Address="73.192.56.229"/>
+            <saml2:AuthnContext>
+                <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml2:AuthnContextClassRef>
+            </saml2:AuthnContext>
+        </saml2:AuthnStatement>
+        <saml2:AttributeStatement>
+            <saml2:Attribute FriendlyName="uid" Name="urn:oid:0.9.2342.19200300.100.1.1" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                <saml2:AttributeValue>mahendran</saml2:AttributeValue>
+            </saml2:Attribute>
+        </saml2:AttributeStatement>
+    </saml2:Assertion>
+</saml2p:Response>
+
+-->
