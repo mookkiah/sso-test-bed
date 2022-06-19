@@ -41,6 +41,8 @@ $config = [
         // Can be NULL/unset, in which case a builtin discovery service will be used.
         'discoURL' => null,
 
+        'sign.logout' => true,
+
         /*
          * The attributes parameter must contain an array of desired attributes by the SP.
          * The attributes can be expressed as an array of names or as an associative array
