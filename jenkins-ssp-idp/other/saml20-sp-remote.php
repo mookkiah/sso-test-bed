@@ -121,3 +121,56 @@ $metadata['https://jenkins-saml-sp.mm-local.com/securityRealm/finishLogin'] = [
     'validate.authnrequest' => false,
     'saml20.sign.assertion' => false,
 ];
+
+/**
+ * This is the SP setup for the project jenkins-ssp-idp
+ * Git link for JCasC.securityRealm.saml 
+ */
+$metadata['https://jenkins-saml-sp.example.com/securityRealm/finishLogin'] = [
+    'entityid' => 'https://jenkins-saml-sp.example.com/securityRealm/finishLogin',
+    'contacts' => [],
+    'metadata-set' => 'saml20-sp-remote',
+    'expire' => 2286791312,
+    'AssertionConsumerService' => [
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://jenkins-saml-sp.example.com/securityRealm/finishLogin',
+            'index' => 0,
+        ],
+    ],
+    'SingleLogoutService' => [
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://jenkins-saml-sp.example.com/securityRealm/finishLogin?logoutendpoint=true',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign',
+            'Location' => 'https://jenkins-saml-sp.example.com/securityRealm/finishLogin?logoutendpoint=true',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://jenkins-saml-sp.example.com/securityRealm/finishLogin?logoutendpoint=true',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:SOAP',
+            'Location' => 'https://jenkins-saml-sp.example.com/securityRealm/finishLogin?logoutendpoint=true',
+        ],
+    ],
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+    'keys' => [
+        [
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIC+jCCAeKgAwIBAgIVAJUb6aLbAPtIDdAKWDSrt/hMF1jkMA0GCSqGSIb3DQEBCwUAMBcxFTATBgNVBAMMDFNBTUwtamVua2luczAeFw0yMjA2MTkxMTQ0NDZaFw0yMzA2MTkxMTQ0NDZaMBcxFTATBgNVBAMMDFNBTUwtamVua2luczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANi9UHL8IllyUhbwGVlp4hvqHD0lJlBT8oKZR2RwXw2Ax5U2H3UJAmeYGt8IMNcMKgcqDtO0M8Ds7Y6QPMokHP5ZugscP0aRODbNkjGzGtlgNsaqqL9GywWWedLn7RuZChqTY2oHS51qYuxOFbHvl1V5A5PTapwWPhd4NrDcrYi5R4iHVnk/Km1Crvj1sdwWVunvG7A1RDUmKzKXKVOYpHa1AThvpDhnoft02ECa18ebre55VwJbs0g9g+lfWha8iJM9b5u3v4he+8EuLarZQxJ5KJrlp0P+quxHGCDd3iQxOo33HGqDjetLKdlEF60skm3zdEF34kXDry4a0LrB1lMCAwEAAaM9MDswHQYDVR0OBBYEFBsYSrW47n/A94wCg4pCsgr93r7+MBoGA1UdEQQTMBGCD2NuPVNBTUwtamVua2luczANBgkqhkiG9w0BAQsFAAOCAQEAHU8DVis1qjePOL2FLFX0D8A8c4ilUyvtkDB11Anp5NN2bYZGVOEuPJFdqeiXI3x1QB9ivys5qTvbteMULSUXNOwBDjh/r0WyykirX4Zo9Wr3aeP1hUNBd6Bxjw2JTrdc5Hd2C+Yvwg3i7WDkmZ2AxMzshjkdi3/trbyQWudq5If93BeQFzb4Un3HXvDangPIPNRnQR+eCXddR49tImFKIyGxrteX5Dzt45lrhZ59+8uXOqMhNhn3vxjU0rauOLSSJPMeQQixgYpQ9SSqy4SbRpQ99DXb12pZC4tXxhimU5GvY1dOI8ojdytSDc8qB+l/gv+GEoA1tMyPZFpXr4t3HQ==',
+        ],
+        [
+            'encryption' => true,
+            'signing' => false,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIC+jCCAeKgAwIBAgIVAJUb6aLbAPtIDdAKWDSrt/hMF1jkMA0GCSqGSIb3DQEBCwUAMBcxFTATBgNVBAMMDFNBTUwtamVua2luczAeFw0yMjA2MTkxMTQ0NDZaFw0yMzA2MTkxMTQ0NDZaMBcxFTATBgNVBAMMDFNBTUwtamVua2luczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANi9UHL8IllyUhbwGVlp4hvqHD0lJlBT8oKZR2RwXw2Ax5U2H3UJAmeYGt8IMNcMKgcqDtO0M8Ds7Y6QPMokHP5ZugscP0aRODbNkjGzGtlgNsaqqL9GywWWedLn7RuZChqTY2oHS51qYuxOFbHvl1V5A5PTapwWPhd4NrDcrYi5R4iHVnk/Km1Crvj1sdwWVunvG7A1RDUmKzKXKVOYpHa1AThvpDhnoft02ECa18ebre55VwJbs0g9g+lfWha8iJM9b5u3v4he+8EuLarZQxJ5KJrlp0P+quxHGCDd3iQxOo33HGqDjetLKdlEF60skm3zdEF34kXDry4a0LrB1lMCAwEAAaM9MDswHQYDVR0OBBYEFBsYSrW47n/A94wCg4pCsgr93r7+MBoGA1UdEQQTMBGCD2NuPVNBTUwtamVua2luczANBgkqhkiG9w0BAQsFAAOCAQEAHU8DVis1qjePOL2FLFX0D8A8c4ilUyvtkDB11Anp5NN2bYZGVOEuPJFdqeiXI3x1QB9ivys5qTvbteMULSUXNOwBDjh/r0WyykirX4Zo9Wr3aeP1hUNBd6Bxjw2JTrdc5Hd2C+Yvwg3i7WDkmZ2AxMzshjkdi3/trbyQWudq5If93BeQFzb4Un3HXvDangPIPNRnQR+eCXddR49tImFKIyGxrteX5Dzt45lrhZ59+8uXOqMhNhn3vxjU0rauOLSSJPMeQQixgYpQ9SSqy4SbRpQ99DXb12pZC4tXxhimU5GvY1dOI8ojdytSDc8qB+l/gv+GEoA1tMyPZFpXr4t3HQ==',
+        ],
+    ],
+    'validate.authnrequest' => false,
+    'saml20.sign.assertion' => false,
+];

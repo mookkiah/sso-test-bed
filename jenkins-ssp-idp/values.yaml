@@ -355,11 +355,11 @@ controller:
                 <md:EmailAddress>mailto:admin@mm-local.com</md:EmailAddress>
               </md:ContactPerson>
             </md:EntityDescriptor>
-          
           # url: "https://login.microsoftonline.com/hmcts.net/FederationMetadata/2007-06/FederationMetadata.xml"
         maximumAuthenticationLifetime: 7862400
         usernameAttributeName: "uid"
         usernameCaseConversion: "none"
+        logoutUrl: "https://ssp-idp.mm-local.com/simplesaml/module.php/core/authenticate.php?as=example-userpass&logout"
     # Ignored if authorizationStrategy is defined in controller.JCasC.configScripts
     authorizationStrategy: |-
       loggedInUsersCanDoAnything:
@@ -476,7 +476,7 @@ controller:
     # Set this path to jenkinsUriPrefix above or use annotations to rewrite path
     # path: "/jenkins"
     # configures the hostname e.g. jenkins.example.com
-    hostName: jenkins-saml-sp.mm-local.com
+    hostName: jenkins-saml-sp.example.com
     tls:
     # - secretName: jenkins.cluster.local
     #   hosts:
