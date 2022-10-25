@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"  entityID="https://ssp-sp-gluu-idp-custom-attr.mm-local.com/simplesaml/module.php/saml/sp/metadata.php/default-sp">
+  <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ssp-sp-gluu-idp-custom-attr.mm-local.com/simplesaml/module.php/saml/sp/saml2-logout.php/default-sp"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://ssp-sp-gluu-idp-custom-attr.mm-local.com/simplesaml/module.php/saml/sp/saml2-acs.php/default-sp" index="1"/>
+  </md:SPSSODescriptor>
+  <md:ContactPerson contactType="technical">
+    <md:GivenName>Administrator</md:GivenName>
+    <md:EmailAddress>admin@mm-local.com</md:EmailAddress>
+  </md:ContactPerson>
+</md:EntityDescriptor>
