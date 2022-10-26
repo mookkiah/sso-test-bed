@@ -3,7 +3,7 @@
 export NAMESPACE=ssp-sp-gluu-idp
 env | grep 'NAMESPACE'
 
-kubectl create namespace $NAMESPACE --ignore-not-found
+kubectl create namespace $NAMESPACE
 kubectl config set-context --current --namespace $NAMESPACE
 cd `git rev-parse --show-toplevel`/ssp-sp-gluu-idp
 
