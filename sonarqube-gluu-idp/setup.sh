@@ -1,6 +1,6 @@
 kubectl create namespace sonarqube-gluu-idp 
-kubectl config set-context --current --namespace sonarqube-sp-gluu-idp 
-cd `git rev-parse --show-toplevel`/sonarqube-sp-gluu-idp 
+kubectl config set-context --current --namespace sonarqube-gluu-idp 
+cd `git rev-parse --show-toplevel`/sonarqube-gluu-idp 
 
 export RELEASE_NAME=sonarqube
 export NAMESPACE=sonarqube-gluu-idp
