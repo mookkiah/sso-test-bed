@@ -13,7 +13,8 @@ cd `git rev-parse --show-toplevel`/ssp-sp-gluu-idp
 #mkdir -p cert
 #openssl req -newkey rsa:2048 -new -x509 -nodes -keyout cert/server.pem -out cert/server.crt -config csr.conf
 #openssl x509 -in cert/server.crt -text -noout
-#sudo bash -c 'echo "127.0.0.1    ssp-sp-gluu-idp.mm-local.com" >> /etc/hosts'
+# Add ssp-sp-gluu-idp.example.com to DNS or your /etc/hosts
+#sudo bash -c 'echo "127.0.0.1    ssp-sp-gluu-idp.example.com >> /etc/hosts'
 
 kubectl -n $NAMESPACE delete secret x509keycert --ignore-not-found
 kubectl -n $NAMESPACE create secret generic x509keycert --from-file=cert/server.pem --from-file=cert/server.crt
@@ -36,6 +37,6 @@ kubectl -n $NAMESPACE  create -f deployment.yaml
 kubectl -n $NAMESPACE  apply -f service.yaml
 kubectl -n $NAMESPACE  apply -f ingress.yaml    
 
-open https://ssp-sp-gluu-idp.mm-local.com/simplesaml/
+open https://ssp-sp-gluu-idp.example.com/msimplesaml/
 
 kubectl -n $NAMESPACE logs -f -l app=ssp-sp

@@ -28,7 +28,7 @@ $config = [
      * external url, no matter where you come from (direct access or via the
      * reverse proxy).
      */
-    'baseurlpath' => 'https://ssp-sp-gluu-idp.mm-local.com/simplesaml/',
+    'baseurlpath' => 'https://ssp-sp-gluu-idp.example.com/simplesaml/',
 
     /*
      * The 'application' configuration array groups a set configuration options
@@ -74,7 +74,7 @@ $config = [
      * also as the technical contact in generated metadata.
      */
     'technicalcontact_name' => 'Administrator',
-    'technicalcontact_email' => 'admin@mm-local.com',
+    'technicalcontact_email' => 'admin@example.com',
 
     /*
      * (Optional) The method by which email is delivered.  Defaults to mail which utilizes the

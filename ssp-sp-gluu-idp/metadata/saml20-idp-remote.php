@@ -186,3 +186,94 @@ $metadata['https://centos423.gluu.org/idp/shibboleth'] = [
         'centos423.gluu.org',
     ],
 ];
+
+
+
+$metadata['https://testshibcn.gluu.info/idp/shibboleth'] = [
+    'entityid' => 'https://testshibcn.gluu.info/idp/shibboleth',
+    'description' => [
+        'en' => 'testshibcn.gluu.info',
+    ],
+    'OrganizationName' => [
+        'en' => 'testshibcn.gluu.info',
+    ],
+    'name' => [
+        'en' => 'testshibcn.gluu.info',
+    ],
+    'OrganizationDisplayName' => [
+        'en' => 'testshibcn.gluu.info',
+    ],
+    'url' => [
+        'en' => 'https://testshibcn.gluu.info',
+    ],
+    'OrganizationURL' => [
+        'en' => 'https://testshibcn.gluu.info',
+    ],
+    'contacts' => [],
+    'metadata-set' => 'saml20-idp-remote',
+    'SingleSignOnService' => [
+        [
+            'Binding' => 'urn:mace:shibboleth:2.0:profiles:AuthnRequest',
+            'Location' => 'https://testshibcn.gluu.info/idp/profile/SAML2/Unsolicited/SSO',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://testshibcn.gluu.info/idp/profile/SAML2/POST/SSO',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign',
+            'Location' => 'https://testshibcn.gluu.info/idp/profile/SAML2/POST-SimpleSign/SSO',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://testshibcn.gluu.info/idp/profile/SAML2/Redirect/SSO',
+        ],
+    ],
+    'SingleLogoutService' => [
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://testshibcn.gluu.info/idp/profile/SAML2/Redirect/SLO',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://testshibcn.gluu.info/idp/profile/SAML2/POST/SLO',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign',
+            'Location' => 'https://testshibcn.gluu.info/idp/profile/SAML2/POST-SimpleSign/SLO',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:SOAP',
+            'Location' => 'https://testshibcn.gluu.info/idp/profile/SAML2/SOAP/SLO',
+        ],
+    ],
+    'ArtifactResolutionService' => [
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:SOAP',
+            'Location' => 'https://testshibcn.gluu.info/idp/profile/SAML2/SOAP/ArtifactResolution',
+            'index' => 1,
+        ],
+    ],
+    'NameIDFormats' => [
+        'urn:mace:shibboleth:1.0:nameIdentifier',
+        'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+        'urn:oasis:names:tc:SAML:2.0:nameid-format:persistent',
+    ],
+    'keys' => [
+        [
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIDyjCCArKgAwIBAgIUHCmxfddtNpRcpg2i0KjRddG35GowDQYJKoZIhvcNAQELBQAwejELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAlRYMQ8wDQYDVQQHDAZBdXN0aW4xDTALBgNVBAoMBEdsdXUxHTAbBgNVBAMMFHRlc3RzaGliY24uZ2x1dS5pbmZvMR8wHQYJKoZIhvcNAQkBFhBzdXBwb3J0QGdsdXUub3JnMB4XDTIyMTEyNjAzNTg0MloXDTIzMTEyNjAzNTg0MlowejELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAlRYMQ8wDQYDVQQHDAZBdXN0aW4xDTALBgNVBAoMBEdsdXUxHTAbBgNVBAMMFHRlc3RzaGliY24uZ2x1dS5pbmZvMR8wHQYJKoZIhvcNAQkBFhBzdXBwb3J0QGdsdXUub3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxoNeCPFFSeoi2Q59uPv/zGGeTpFquTsOmA3dc0IBS++SJetpjRfWyzHIdrwEFOfwAJRPEeNKqz93d1EPAvQt4csTSc8IYP9ixhTR+yJNapZ40gTeyHJas212XZOqqXrXiePIHnGzP6F0gqSd7bDoCT6fde4AaNf0fRm/3h0knqWALj0Q4U1N8cPYuk9HQaCrullvoOOJE/90pscy5SRfoiFalloaxb+kuMzlzVv4BZ7SWlBuYovov9iAbnMbHdm8P+AkBmvuz86BnXoicsNYamnppDdpBEVyXKTyUmA7EgEvfGai6d+qA50QT156MOltShgH81PnWbqp0d7a75I5XwIDAQABo0gwRjAJBgNVHRMEAjAAMCwGA1UdEQQlMCOCFHRlc3RzaGliY24uZ2x1dS5pbmZvggtpZHAtc2lnbmluZzALBgNVHQ8EBAMCBeAwDQYJKoZIhvcNAQELBQADggEBADXNII9OxFGHxavnOeEd7YZmUkPEv+NCChJh5aFxcXrMiTn0Qwd1KlgCVNdUnGSLt4XTVJYXPGBZ5PtJveabwLAJg5MH/Obs0jBySgzLjTxkrZOOwbIIkZt6skh19PzKF174cG4WN4QSxr41QV7LDZJ++ioMcBYYilDKt7Wu3nMI4DEgptXOA5Oo0RXoSggGfk+RXIB0tN5REsbVT3UWDPHjtQRlznOYEEQFEjbphM8M2qjIgyOcnhXxajL2hYxjo0x88EmoCa020t1JzbbriIb/d7txat08fYmaJh59lRiV5XrWoBafEbgQcOGGDx6Aj2t7WD0mfv4famNV4yiKbpI=',
+        ],
+        [
+            'encryption' => true,
+            'signing' => false,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIDzTCCArWgAwIBAgIUerl+6tlySY5e5RrL+U4DLRcpP1UwDQYJKoZIhvcNAQELBQAwejELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAlRYMQ8wDQYDVQQHDAZBdXN0aW4xDTALBgNVBAoMBEdsdXUxHTAbBgNVBAMMFHRlc3RzaGliY24uZ2x1dS5pbmZvMR8wHQYJKoZIhvcNAQkBFhBzdXBwb3J0QGdsdXUub3JnMB4XDTIyMTEyNjAzNTg0M1oXDTIzMTEyNjAzNTg0M1owejELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAlRYMQ8wDQYDVQQHDAZBdXN0aW4xDTALBgNVBAoMBEdsdXUxHTAbBgNVBAMMFHRlc3RzaGliY24uZ2x1dS5pbmZvMR8wHQYJKoZIhvcNAQkBFhBzdXBwb3J0QGdsdXUub3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwLZYBPDUGyDw5Pg6iu4zOkCngSA855uLzi8xGrSDfsrOmCYoookRat5PeXTnVOHfTgrt/nr4rIYbhgBW42yEec10yp+cRUaSCjMat5fB/TZYfMecpA7d+dOF0Nq3kh6vTpBCz8qItZ8EhBsCN5C8a2uzkRysNPzCL4dTdAOnM+0C86czABP5DNPUwTgh/uOtvUwGhO7X3BRP2ooBfHSd+04k6I7Kz75aCyx3CJ+rwlyyTMyNfjLHsk2S7Hhph+T0OPi0BZ7Yma3N6NAmEx07GykOD2wk4kL/BYkCluuRKtew/gsvhaBeSNR5mphQrsaED7TXVjBXpzSAKSLewxxizwIDAQABo0swSTAJBgNVHRMEAjAAMC8GA1UdEQQoMCaCDmlkcC1lbmNyeXB0aW9ughR0ZXN0c2hpYmNuLmdsdXUuaW5mbzALBgNVHQ8EBAMCBeAwDQYJKoZIhvcNAQELBQADggEBALMRcpnGmVrsvL9929uqtgC13HYqHJGzxqHRcIbIrXvav98x3BNw261pCOpQuz0+nZs2whkwHKR6p1K6D21BuTw3c+bP4OVJptZSwuyQbkCtU+w6LjNj35WS7VtxFrQ33AIZEGaoMsWkWNMyRshA4dRVz1vuL8OpkaBRGPKRjPZmTl022DjAxC3oTOLC8LXWH2yhaW2hmu2nHuCn+Z2oc8ui9iH2eEtonHjhVIusPcBDdFYoz3mgjQYIRHwTAcntXNNzeP1CFsjhxuoOOzyJHLb0YYZPKteBm1lxRUaSRrDeRWS30YL9tbeMbxy/8qp9I4d9pikmEMHupGbJtVlHplw=',
+        ],
+    ],
+    'scope' => [
+        'testshibcn.gluu.info',
+    ],
+];

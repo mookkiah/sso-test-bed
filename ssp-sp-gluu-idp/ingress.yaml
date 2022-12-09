@@ -5,7 +5,7 @@ metadata:
 
 spec:
   rules:
-    - host: ssp-sp-gluu-idp.mm-local.com
+    - host: ssp-sp-gluu-idp.example.com 
       http:
         paths:
           - path: /simplesaml
