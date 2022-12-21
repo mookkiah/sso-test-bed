@@ -277,3 +277,93 @@ $metadata['https://testshibcn.gluu.info/idp/shibboleth'] = [
         'testshibcn.gluu.info',
     ],
 ];
+
+
+$metadata['https://latest441.gluu.info/idp/shibboleth'] = [
+    'entityid' => 'https://latest441.gluu.info/idp/shibboleth',
+    'description' => [
+        'en' => 'latest441 Gluu Inc.',
+    ],
+    'OrganizationName' => [
+        'en' => 'latest441 Gluu Inc.',
+    ],
+    'name' => [
+        'en' => 'latest441 Gluu Inc.',
+    ],
+    'OrganizationDisplayName' => [
+        'en' => 'latest441 Gluu Inc.',
+    ],
+    'url' => [
+        'en' => 'https://latest441.gluu.info',
+    ],
+    'OrganizationURL' => [
+        'en' => 'https://latest441.gluu.info',
+    ],
+    'contacts' => [],
+    'metadata-set' => 'saml20-idp-remote',
+    'SingleSignOnService' => [
+        [
+            'Binding' => 'urn:mace:shibboleth:2.0:profiles:AuthnRequest',
+            'Location' => 'https://latest441.gluu.info/idp/profile/SAML2/Unsolicited/SSO',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://latest441.gluu.info/idp/profile/SAML2/POST/SSO',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign',
+            'Location' => 'https://latest441.gluu.info/idp/profile/SAML2/POST-SimpleSign/SSO',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://latest441.gluu.info/idp/profile/SAML2/Redirect/SSO',
+        ],
+    ],
+    'SingleLogoutService' => [
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://latest441.gluu.info/idp/profile/SAML2/Redirect/SLO',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://latest441.gluu.info/idp/profile/SAML2/POST/SLO',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign',
+            'Location' => 'https://latest441.gluu.info/idp/profile/SAML2/POST-SimpleSign/SLO',
+        ],
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:SOAP',
+            'Location' => 'https://latest441.gluu.info/idp/profile/SAML2/SOAP/SLO',
+        ],
+    ],
+    'ArtifactResolutionService' => [
+        [
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:SOAP',
+            'Location' => 'https://latest441.gluu.info/idp/profile/SAML2/SOAP/ArtifactResolution',
+            'index' => 1,
+        ],
+    ],
+    'NameIDFormats' => [
+        'urn:mace:shibboleth:1.0:nameIdentifier',
+        'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+        'urn:oasis:names:tc:SAML:2.0:nameid-format:persistent',
+    ],
+    'keys' => [
+        [
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIID3TCCAsWgAwIBAgIUJge9gz6/oJgZYR9RDIYoBInRHXowDQYJKoZIhvcNAQELBQAwfjELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAlRYMQ8wDQYDVQQHDAZBdXN0aW4xEjAQBgNVBAoMCUdsdXUgSW5jLjEcMBoGA1UEAwwTbGF0ZXN0NDQxLmdsdXUuaW5mbzEfMB0GCSqGSIb3DQEJARYQc3VwcG9ydEBnbHV1Lm9yZzAeFw0yMjEwMDYxNzM1MzlaFw0yMzEwMDYxNzM1MzlaMH4xCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJUWDEPMA0GA1UEBwwGQXVzdGluMRIwEAYDVQQKDAlHbHV1IEluYy4xHDAaBgNVBAMME2xhdGVzdDQ0MS5nbHV1LmluZm8xHzAdBgkqhkiG9w0BCQEWEHN1cHBvcnRAZ2x1dS5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDPCc6sCwUD5YSBzAssSKAQSDOLixLCG/dLZ3eF9FIzR5jLibV0f/kbWA96VkFgBEvsBizs18JnoeriNJ1sNOsRTvaqtlbST5Y7pihMTAAU6jNT8HQPwJzrrPJECtF/IgFS+uUVsffH4cAMXSl+vvWncFcVAvS1smkQDPshi/jJdP3nWD11Zxsl0/VhpWOnah10vuHaR1bCca5sLf7alc1m2YRyMpXKa3+kI+LLTw4EbEZV9Nh++IPVUk0NQAtZhSey9FFuL+yrEa5FN+sQZWsSNo9/MHysLeKwg6vwiwpBez3HK1UTII8w0dTDe2zVQlBepVuBQCzZJd6Owqzu7YSVAgMBAAGjUzBRMB0GA1UdDgQWBBRXwY6APOfYuLeGl2oEvu6818KTbTAfBgNVHSMEGDAWgBRXwY6APOfYuLeGl2oEvu6818KTbTAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBdX79pnw1beo0mYK2/25CZ7uZgFiKXjsBNiDNZpnVz3bZZVUiDyxTYpXdYhB+AgqLTVOY2+Sn3HKxMBV1pcG1eV5zZlj5Mss6FLpTNPjWVg2Qc1DlfZl0y0m56qjoz1Vx9MOM88hgc8+6KlzT1g4Lat1HKniJqQPEbbHpjOVajFxoE6u7Ru75AvzWqts3b0TZ+GkgBenigNSDAa8gk7C2hS9nflYJVNz9/+qhSOP22b3BLVg97XuFpzQMu3geoJO+1faF6VlnCBycDtJI89YEM4g/OxZMkC+nBJWe8cN9c1Yz3zymBNmgR7ZUu0JvhWHgX/+7418Y+16QGPc733XUc',
+        ],
+        [
+            'encryption' => true,
+            'signing' => false,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIID3TCCAsWgAwIBAgIUFzKOPJUri3Kq0b1gy4NcUB1AFkYwDQYJKoZIhvcNAQELBQAwfjELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAlRYMQ8wDQYDVQQHDAZBdXN0aW4xEjAQBgNVBAoMCUdsdXUgSW5jLjEcMBoGA1UEAwwTbGF0ZXN0NDQxLmdsdXUuaW5mbzEfMB0GCSqGSIb3DQEJARYQc3VwcG9ydEBnbHV1Lm9yZzAeFw0yMjEwMDYxNzMzMjlaFw0yMzEwMDYxNzMzMjlaMH4xCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJUWDEPMA0GA1UEBwwGQXVzdGluMRIwEAYDVQQKDAlHbHV1IEluYy4xHDAaBgNVBAMME2xhdGVzdDQ0MS5nbHV1LmluZm8xHzAdBgkqhkiG9w0BCQEWEHN1cHBvcnRAZ2x1dS5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC9VGz8bHlLuscVJolZwq6lJYS+Bu8XQAPYPmjggFtyR7bnOPtXE+nhfvsmVadKhe0Id116YqeNsLm1kwju7LjYhHYhCDz/oTsH0uM2h/LND6tkEti6aR0GFwwZg6KjRvTT117nNc8kdd+nHx9sjrKQ+DHlEatSATW6wRwX0BfpLE1DuLs79lPh0LGSgWsHjbgfCTwI9TqfV1bwEzGTKWZ2hb+oJ4HhyCcVLSIsvVcyyAkW5VlNyibzV+32jlP00nzSPCaglztVFR4K3i3hGjkCBuqCXz+WNLXgE0qaoK90bXvrcO+Ir5w716UPbkKSTJ9GdiEm/ptYmSZ8RwhJCcL9AgMBAAGjUzBRMB0GA1UdDgQWBBR7xhFICGqyk1EwnDIq0MHe6RxeTDAfBgNVHSMEGDAWgBR7xhFICGqyk1EwnDIq0MHe6RxeTDAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBp/1lub8WKMFkYzmp0tRFQ9k0xvZfYjJv2mzaEDGOCl0Px870t8OZn2tnAMx3XMD/mpb2Kyj4SoFiVvAKN217MvGdE6GcjLtnJhUGMWJJ6SiZUDCnWOytytRWEEFlmVpCLBUli07Yh526ImD854l55i+ff+V3lja2LtONrjjmGcu9w7/scdC2OUEBlmOPTwhJv5LgUYtM+F/EUUOZCY+b9hTkgT55k8yYTmdlOenxnasaMHyD7i82AhERnj5natjl2pxRI0A6Bts+75YCfjROftJ6pU933Mm/CLa+eyWnBWhBUFwtOgcEK1dyq1C6t8rSZwNphV/bIw8s7L1Q5jQFi',
+        ],
+    ],
+    'scope' => [
+        'latest441.gluu.info',
+    ],
+];
