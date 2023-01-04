@@ -1,0 +1,15 @@
+dn: cn=minions,ou=superheros,dc=glauth,dc=com
+cn: minions
+uid: minions
+ou: superheros
+uidNumber: 5005
+accountStatus: active
+objectClass: posixAccount
+loginShell: /bin/bash
+homeDirectory: /home/minions
+description: minions via LDAP
+gecos: minions via LDAP
+gidNumber: 5501
+memberOf: cn=caped,ou=groups,dc=glauth,dc=com
+memberOf: cn=civilians,ou=groups,dc=glauth,dc=com
+memberOf: cn=superheros,ou=groups,dc=glauth,dc=com

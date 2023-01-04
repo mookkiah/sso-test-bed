@@ -16,7 +16,7 @@ image:
   repository: "glauth/glauth-plugins"
 
   # Production tag
-  tag: "v2.0.0"
+  # tag: "v2.0.0"
 
   # Testing tag
   #tag: "nightly"
@@ -40,7 +40,7 @@ config:
     # You may wish to override the access type; for instance if you
     # are setting up a single node with hostPath, since hostPath
     # does not support multiple access but we are requesting that.
-    access: ReadWriteMany
+    access: ReadWriteOnce
     #
     # Or you could make sure that a different storageClass
     # is picked upon instantiation.
@@ -79,6 +79,7 @@ database:
 
 service:
   name: glauth
+  port: 5555
 
   # --------------------------------------------------------------------------------
   # How do we expose the server to the outside world?
