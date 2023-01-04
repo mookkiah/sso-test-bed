@@ -1,0 +1,180 @@
+# Default values for glauth.
+# This is a YAML-formatted file.
+
+replicaCount: 1
+
+image:
+
+  # --------------------------------------------------------------------------------
+  # Repository to pull from the registry.
+  # --------------------------------------------------------------------------------
+
+  # Default "config" image.
+  #repository: "glauth/glauth"
+
+  # Use alternate image for SQL plugins.
+  repository: "glauth/glauth-plugins"
+
+  # Production tag
+  tag: "v2.0.0"
+
+  # Testing tag
+  #tag: "nightly"
+
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+config:
+
+  # --------------------------------------------------------------------------------
+  # Will be used, if our backend is SQLite, to create a storage volume for the db
+  # Also, to store cert information if using LDAPS
+  # --------------------------------------------------------------------------------
+
+  storage:
+    size: 5G
+
+    # You may wish to override the access type; for instance if you
+    # are setting up a single node with hostPath, since hostPath
+    # does not support multiple access but we are requesting that.
+    access: ReadWriteMany
+    #
+    # Or you could make sure that a different storageClass
+    # is picked upon instantiation.
+    class: local-path
+    #
+    # Alternatively, you could use an existing claim.
+    # existingClaim: true
+
+# --------------------------------------------------------------------------------
+# This is in addition to specifying backend type in the cfg file
+# --------------------------------------------------------------------------------
+
+backend:
+
+  # Possible values: 'config' or 'database'
+  type: database
+
+  # If provided, this is the name of a local config file that will be
+  # stored in our configuration map.
+  # Note that when using 'config' you could simply edit `sample-simple.cfg`
+  # and not provide an alternate file; you could similarly edit `sample-database.cfg`
+  # to support a non-SQLIte database.
+  #file: example.cfg
+
+database:
+
+  engine: sqlite
+
+  # If our engine is 'sqlite' then this runs a separate pod,
+  # that we can use to provision/update our database.
+  # For security reasons, you should disable this pod when not in use.
+  # Simply run `helm upgrade` instead of `helm install` after setting the
+  # value below to false, and the pod will be terminated. Of course, it can be
+  # restarted in a similar manner.
+  shell: true
+
+service:
+  name: glauth
+
+  # --------------------------------------------------------------------------------
+  # How do we expose the server to the outside world?
+  # --------------------------------------------------------------------------------
+
+  #type: ClusterIP
+  #ports:
+  #  - name: ldap
+  #    internal: 3893
+  #    external: 3893
+  #  - name: ldaps
+  #    internal: 3894
+  #    external: 3894
+  #  - name: web
+  #    internal: 5555
+  #    external: 5555
+
+  type: NodePort
+  ports:
+    - name: ldap
+      internal: 3893
+      external: 3893
+      node: 30389
+    - name: ldaps
+      internal: 3894
+      external: 3894
+      node: 30636
+    - name: web
+      internal: 5555
+      external: 5555
+      node: 30555
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+# --------------------------------------------------------------------------------
+# Untested so far: ingress for port 5555 or even TCP ingress if needed
+# --------------------------------------------------------------------------------
+
+ingress:
+  enabled: true
+  className: ""
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  hosts:
+    - host: glauth.example.com 
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
