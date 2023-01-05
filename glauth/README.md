@@ -107,3 +107,16 @@ memberOf: cn=caped,ou=groups,dc=glauth,dc=com
 memberOf: cn=civilians,ou=groups,dc=glauth,dc=com
 memberOf: cn=superheros,ou=groups,dc=glauth,dc=com
 ```
+
+
+Using OpenDJ ldapsearch
+```
+/opt/opendj/bin/ldapsearch  -X -h 10.152.183.133 -p 3893 -D cn=serviceuser,ou=svcaccts,dc=glauth,dc=com -w mysecret  -b dc=glauth,dc=com cn=hackers 
+```
+
+
+Insert a user with special characters in name
+```
+INSERT INTO users (name, sn, givenname, mail, uidnumber, primarygroup, passsha256  ) VALUES
+("renee", "François", "Renée François", "renee.francois@mailinator.com", 5007, 5501, "6478579e37aff45f013e14eeb30b3cc56c72ccdc310123bcdf53e0333e3f416a");
+```
