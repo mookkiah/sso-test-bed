@@ -21,14 +21,14 @@ Using the access token received, we can perform SCIM apis.
 
 Find user name contains `mi`
 ```
-curl -G -H 'Authorization: Bearer 30a74c60-00e1-45b5-88d6-24766b9299a9' -d count=10 \
+curl -G -H 'Authorization: Bearer ...token...' -d count=10 \
       --data-urlencode 'filter=userName co "mi"' $IDP_BASE_URL/scim/restv1/scim/v2/Users
 ```
 
 
 Create user
 ```
-curl -H 'Authorization: Bearer 30a74c60-00e1-45b5-88d6-24766b9299a9' \
+curl -H 'Authorization: Bearer ...token...' \
     -H 'Content-Type: application/scim+json' \
    $IDP_BASE_URL/scim/restv1/scim/v2/Users \
   -d '{"schemas":["urn:ietf:params:scim:schemas:core:2.0:User"], "userName":"ajsmith", "name":{ "familyName":"Smith",  "givenName":"Joe" }, "displayName":"Average Joe" }'
@@ -39,7 +39,7 @@ Output
 ```
 
 ```
-curl -H 'Authorization: Bearer 30a74c60-00e1-45b5-88d6-24766b9299a9' \
+curl -H 'Authorization: Bearer ...token...' \
     -H 'Content-Type: application/scim+json' \
    $IDP_BASE_URL/scim/restv1/scim/v2/Users \
   -d '{"schemas":["urn:ietf:params:scim:schemas:core:2.0:User"], "userName":"jpeter", "name":{ "familyName":"Peter",  "givenName":"John" }, "displayName":"John Peter", "emails": [{ "value": "jpeter@a.b.c.d.example.xy", "primary": true }] }'
@@ -52,10 +52,10 @@ Output
 
 
 ```
-curl -H 'Authorization: Bearer 30a74c60-00e1-45b5-88d6-24766b9299a9' \
+curl -H 'Authorization: Bearer ...token...' \
     -H 'Content-Type: application/scim+json' \
    $IDP_BASE_URL/scim/restv1/scim/v2/Users \
-  -d '{"schemas":["urn:ietf:params:scim:schemas:core:2.0:User"], "userName":"jpeter", "name":{ "familyName":"Peter",  "givenName":"John" }, "displayName":"John Peter", "emails": [{ "value": "jpeter@example.xy", "primary": true }] }'
+  -d '{"schemas":["urn:ietf:params:scim:schemas:core:2.0:User"], "userName":"invoicefush", "name":{ "familyName":"fusheng",  "givenName":"invoice" }, "displayName":"John Peter", "emails": [{ "value": "invoice@e.fusheng.com.tw", "primary": true }] }'
 ```
 
 Output
