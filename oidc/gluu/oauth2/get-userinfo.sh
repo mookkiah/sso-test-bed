@@ -1,3 +1,1 @@
-echo curl -k -vvv -X POST \
--H "Authorization: Bearer ${access_token}" \
-https://${baseUrl}/userinfo
+curl -k -vvv -X POST -H "Authorization: Bearer "${ACCESS_TOKEN} ${USERINFO_EP}

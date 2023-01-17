@@ -1,23 +1,6 @@
 
-rawurlencode() {
-  local string="${1}"
-  local strlen=${#string}
-  local encoded=""
-  local pos c o
 
-  for (( pos=0 ; pos<strlen ; pos++ )); do
-  	c=${string:$pos:1}
-    case "$c" in
-		[-_.~a-zA-Z0-9] ) o="${c}" ;;
-		* )               printf -v o '%%%02x' "'$c"
-	esac
-	encoded+="${o}"
-	done
-	echo "${encoded}"    # You can either set a return variable (FASTER) 
-	REPLY="${encoded}"   #+or echo the result (EASIER)... or both... :p
-}
-
-echo "$LOGIN_PAGE?client_id=$( rawurlencode $CLIENTID )&redirect_uri=$( rawurlencode $REDIRECTURI )&response_type=code&scope=$URLSCOPE"
+echo "$LOGIN_PAGE?client_id=$( urlencode $CLIENT_ID )&redirect_uri=$( urlencode $REDIRECT_URI )&response_type=code&scope=$( urlencode $SCOPE )"
 
 #Why implicit need a browser?
 

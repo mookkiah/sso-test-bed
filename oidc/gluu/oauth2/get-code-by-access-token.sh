@@ -1,1 +1,2 @@
-curl -k --user "$CLIENTID:$CLIENTSECRET" -d "accessToken=$AT&grant_type=authorization_code&client_id=$CLIENTID&redirect_uri=$REDIRECTURI" $TOKEN_EP
+export ENCODED_URL=`urlencode ${REDIRECT_URI}`
+curl -k  -d "accessToken=${ACCESS_TOKEN}&grant_type=authorization_code&client_id=$CLIENT_ID&redirect_uri=${ENCODED_URL}" $TOKEN_ENDPOINT
